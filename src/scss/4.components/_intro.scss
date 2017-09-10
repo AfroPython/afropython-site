@@ -1,0 +1,22 @@
+.c-intro {
+
+    height: 85vh;
+    background-image: url('/img/background-image.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    display: table;
+
+    // display: table-cell;
+    // vertical-align: middle;
+
+    &__title {
+        font-size: 70px;
+    }
+
+    &__article {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

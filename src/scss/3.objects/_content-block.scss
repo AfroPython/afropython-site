@@ -1,0 +1,9 @@
+.o-content-block {
+  margin: 0 auto;
+  max-width: 75rem;
+
+  @media (max-width: $screen-md-max) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

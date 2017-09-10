@@ -1,0 +1,36 @@
+// Colors
+$brand-primary: #913a0d;
+$brand-secondary: #da691a;
+
+
+$gray-light: #f6f3f3;
+$gray-medium: #dddddd;
+$gray-dark: #5e5e5e;
+
+$black:                     #000;
+$white:                     #fff;
+
+// Objects
+$text-color:                $white;
+$link-color:                $brand-primary;
+$link-hover-color:          $brand-secondary;
+
+$selection-bg-color:        $link-color;
+$selection-text-color:      $text-color;
+
+$border-radius:             10px;
+
+// Typography
+$font-family-base:          'Roboto', sans-serif;
+
+$font-weight-default:     400;
+$font-weight-bold:        700;
+
+
+// Screen Sizes
+$screen-xs-max: 767px;
+$screen-sm:     768px;
+$screen-sm-max: 940px;
+$screen-md:     941px;
+$screen-md-max: 1199px;
+$screen-lg:     1200px;

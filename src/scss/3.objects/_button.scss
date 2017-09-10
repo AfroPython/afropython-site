@@ -1,0 +1,25 @@
+.o-btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0 25px 0;
+  transition: all .2s ease-out;
+  border-radius: $border-radius;
+  padding: 1em;
+  color: $white;
+  background-color: $brand-primary;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #00a2b5;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    text-decoration: none;
+    background-color: #00d4eb;
+    border-bottom-color: #00c6dd;
+  }
+
+}

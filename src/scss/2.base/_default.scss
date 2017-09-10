@@ -1,0 +1,33 @@
+// These should have the same values as the meta viewport tag.
+@viewport {
+  width: device-width;
+  zoom: 1.0; /* stylelint-disable-line */
+  // stylelint is disabled for this rule because zoom can have a trailing zero
+}
+
+::selection {
+  background: $selection-bg-color;
+  text-shadow: none;
+  color: $selection-text-color;
+}
+
+html,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
+  color: $text-color;
+  outline-color: $brand-primary;
+  -webkit-font-smoothing: antialiased;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}

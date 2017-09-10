@@ -1,0 +1,40 @@
+@media (min-width: 48em) {
+	.o-row {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+	}
+
+	.o-col {
+		display: table-cell;
+		vertical-align: top;
+
+		&--middle {
+			vertical-align: middle;
+		}
+
+		&--bottom {
+			vertical-align: bottom;
+		}
+
+		&--45{
+			width: 45%;
+		}
+
+		&--add-padding-right{
+			padding-right: 30px;
+		}
+
+		&--small{
+			width: 4%;
+		}
+
+		&--display-table{
+			display: table;
+		}
+	}
+
+	.o-row-inline-block{
+		display: inline-block;
+	}
+}

@@ -1,0 +1,15 @@
+.o-h3{
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.o-h2{
+  font-size: 35px;
+  line-height: 45px;
+  margin-left: 25px;
+
+  @media (max-width: $screen-sm) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

@@ -1,0 +1,36 @@
+html {
+  min-height: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background-color: $gray-light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-light;
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+figure{
+  margin: 0;
+}

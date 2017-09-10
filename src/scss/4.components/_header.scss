@@ -1,0 +1,14 @@
+.c-main-header {
+  width: 100%;
+  display: table;
+  padding-top: 20px;
+  position: fixed;
+  padding-left: 50px;
+
+  &__brand {
+
+    img {
+      width: 120px;
+    }
+  }
+}
