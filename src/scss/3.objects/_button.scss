@@ -11,15 +11,18 @@
   background-color: $brand-primary;
   font-size: 15px;
   text-transform: uppercase;
-  border-bottom: 4px solid #00a2b5;
+
+  &.center-block{
+    margin: auto;
+    display: block;
+  }
 
   &:hover,
   &:focus,
   &:active {
     color: $white;
     text-decoration: none;
-    background-color: #00d4eb;
-    border-bottom-color: #00c6dd;
+    background-color: $brand-secondary;
   }
 
 }
