@@ -23,9 +23,10 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Dependency directories and files
 node_modules
 jspm_packages
+package-lock.json
 
 # Optional npm cache directory
 .npm
@@ -36,4 +37,3 @@ jspm_packages
 /public/css
 /public/js
 /public/img
-
