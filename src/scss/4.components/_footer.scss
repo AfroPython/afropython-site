@@ -1,0 +1,23 @@
+footer{
+	margin-top: 20px; 
+	background-color: $brand-primary;
+	color: $white;
+
+	.c-footer{
+		width: 80%;
+		height: 100%;
+		padding: 25px 0px;
+		margin: auto;	
+		
+		&__text{
+			font-weight: 300;
+			margin-bottom: 0px;
+			font-size: 14px;			
+
+			&__link{
+				color: $white;
+				text-decoration: underline;
+			}
+		}			
+	}
+}

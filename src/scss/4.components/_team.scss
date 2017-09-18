@@ -7,11 +7,24 @@
     }
 
     &__figure {
-        padding: 5px 10px;
-        max-width: 150px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        -webkit-transition: all 500ms linear;
+        transition: all 500ms linear;
 
         img {
             border-radius: 50%;
+            -webkit-transition: all 500ms linear;
+            transition: all 500ms linear;
+        }
+
+        &:hover{  
+            opacity: 0.6;
+            img{
+                -webkit-transform: rotateY(90deg); /* Safari */
+                transform: rotateY(90deg);
+            }
         }
     }
 

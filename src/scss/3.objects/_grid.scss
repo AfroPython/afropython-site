@@ -19,6 +19,7 @@
 
 		&--45{
 			width: 45%;
+			float: left;
 		}
 
 		&--add-padding-right{
@@ -33,7 +34,6 @@
 			display: table;
 		}
 	}
-
 	.o-row-inline-block{
 		display: inline-block;
 	}
