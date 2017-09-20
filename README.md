@@ -25,7 +25,7 @@ $ npm install
 2 - Para rodar o projeto em [http://localhost:3000](http://localhost:3000):
 
 ```
-$ gulp
+$ npm start
 ```
 
 ## Outros comandos úteis
@@ -38,4 +38,3 @@ $ gulp
 * **`gulp build`** - executa as tasks de css-rev e js-rev
 * **`gulp image-minify`** - compacta as imagens da pasta src/images e coloca na dist/img
 * **`gulp default`** - executa todas as tasks e levanta o ambiente (localhost)
-
