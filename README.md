@@ -1,41 +1,26 @@
 # AfroPython
+![AfroPython Logo](AfroPython_brand.png "AfroPython")
 
-## Para rodar o projeto
+## O que é o AfroPython?
+O AfroPython é uma oficina de programação que tem o objetivo de incentivar a população negra nas áreas de tecnologia, porém não é um evento exclusivo para este grupo.
 
-A estrutura consiste em rodar os comandos básicos de um projeto, minificando, compilando e compactando arquivos, direcionando eles para a pasta destino informada no arquivo gulpfile.js no valor da variável ``target.``
+O AfroPython deseja ser uma iniciativa marcante: para quem faz e para quem participa. E queremos somente marcas positivas e felizes, já que as razões que nos unem não são tão historicamente nobres: o fato de que somos 54% da população brasileira e nossa presença representa apenas 0,4% dos profissionais de Tecnologia da Informação no Brasil.
 
-Os arquivos devem ser organizados na pasta SRC ou na pasta padrão de conteúdo dependendo da forma como o projeto vai ser desenvolvido.
-([http://localhost:3000](http://localhost:3000))!
+## O que queremos?
+Oferecer oportunidade de inclusão e ascensão profissional , gerando empoderamento de pessoas negras na área de tecnologia da informação.
 
-## Softwares necessários:
+## Como fazer isto?
+Através de nossos parceiros afetuosos, apaixonados por compartilhar conhecimento e socialmente engajados no combate ao racismo e discriminação racial gerando oportunidades de trabalho para pessoas negras, oferecer uma oficina de programação 100% gratuita para que os participantes aprendam a criar sua primeira aplicação web escrita na linguagem Python.
 
-```
-1 - Node.js
-2 - NPM (incluso na versão Windows do Node.js)
-```
+# Quero contribuir, como posso fazer?
+Criamos um [waffle](https://waffle.io/AfroPython/afropython-site) onde armazenaremos todas as tarefas que ainda precisam ser feitas em nosso site.
 
-## Instruções de como utilizar o projeto
+E em nossa [Wiki](https://github.com/AfroPython/afropython-site.wiki.git) detalhamos passo a passo de como rodar o projeto.
 
-1 - Para baixar as dependências de frontend.:
+##
 
-```
-$ npm install
-```
+Nos acompanhe em nossa página no Facebook :D
+[facebook.com/AfroPython](https://www.facebook.com/AfroPython/)
+E nosso email para contato: afropython@gmail.com
 
-2 - Para rodar o projeto em [http://localhost:3000](http://localhost:3000):
-
-```
-$ gulp
-```
-
-## Outros comandos úteis
-
-* **`npm install --save-dev 'nomedependencia' `** - instala a dependência desejada
-* **`gulp css-compile`** - compila os arquivos ``*.SCSS`` da pasta SRC para o ``style.css`` na DIST
-* **`gulp css-minify`** - depois de executar a task de compilação, o arquivo vai ser minificado e direcionado para a DIST, renomeado como ``style.min.css`` (obs.: este arquivo final é o que deve ser chamado na ``index.html``)
-* **`gulp js-compile`** - compila o ``*.JS`` da pasta SRC e redireciona para a dist
-* **`gulp js-minify`** - minifica o ``*.JS`` da pasta SRC e redireciona para a dist
-* **`gulp build`** - executa as tasks de css-rev e js-rev
-* **`gulp image-minify`** - compacta as imagens da pasta src/images e coloca na dist/img
-* **`gulp default`** - executa todas as tasks e levanta o ambiente (localhost)
-
+Abraços de toda equipe do AfroPython :yellow_heart:
