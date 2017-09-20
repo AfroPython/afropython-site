@@ -1,4 +1,3 @@
-# AfroPython
 ![AfroPython Logo](AfroPython_brand.png "AfroPython")
 
 ## O que é o AfroPython?
@@ -15,12 +14,14 @@ Através de nossos parceiros afetuosos, apaixonados por compartilhar conheciment
 # Quero contribuir, como posso fazer?
 Criamos um [waffle](https://waffle.io/AfroPython/afropython-site) onde armazenaremos todas as tarefas que ainda precisam ser feitas em nosso site.
 
-E em nossa [Wiki](https://github.com/AfroPython/afropython-site.wiki.git) detalhamos passo a passo de como rodar o projeto.
+E em nossa [Wiki](https://github.com/AfroPython/afropython-site/wiki/Instru%C3%A7%C3%B5es-para-rodar-o-projeto) detalhamos passo a passo de como rodar o projeto.
 
 ##
 
-Nos acompanhe em nossa página no Facebook :D
-[facebook.com/AfroPython](https://www.facebook.com/AfroPython/)
+Nos acompanhe em nossa página no [Facebook](https://www.facebook.com/AfroPython/)
+
 E nosso email para contato: afropython@gmail.com
+
+##
 
 Abraços de toda equipe do AfroPython :yellow_heart:
