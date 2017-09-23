@@ -64,4 +64,11 @@ E nosso email para contato: afropython@gmail.com
 
 ##
 
+Nós do AfroPython nos esforçamos para fornecer a todos os participantes um ambiente de respeito e livre de assédio, independentemente de sexo, idade, orientação sexual, deficiência, aparência física, raça ou religião.
+
+Leia a versão integral do nosso [Código de conduta](https://github.com/AfroPython/afropython-site/wiki/C%C3%B3digo-de-Conduta).
+
+
+##
+
 Abraços de toda equipe do AfroPython :yellow_heart:
