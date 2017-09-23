@@ -52,6 +52,8 @@ $ npm start
 ##
 
 Criamos um [waffle](https://waffle.io/AfroPython/afropython-site) onde armazenaremos todas as tarefas que ainda precisam ser feitas em nosso site.
+
+
 Em nossa [Wiki](https://github.com/AfroPython/afropython-site/wiki) você encontrará um pouco de nossa história :D.
 
 ##
