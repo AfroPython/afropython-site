@@ -5,16 +5,54 @@ O AfroPython é uma oficina de programação que tem o objetivo de incentivar a 
 
 O AfroPython deseja ser uma iniciativa marcante: para quem faz e para quem participa. E queremos somente marcas positivas e felizes, já que as razões que nos unem não são tão historicamente nobres: o fato de que somos 54% da população brasileira e nossa presença representa apenas 0,4% dos profissionais de Tecnologia da Informação no Brasil.
 
-## O que queremos?
-Oferecer oportunidade de inclusão e ascensão profissional , gerando empoderamento de pessoas negras na área de tecnologia da informação.
+##
 
-## Como fazer isto?
-Através de nossos parceiros afetuosos, apaixonados por compartilhar conhecimento e socialmente engajados no combate ao racismo e discriminação racial gerando oportunidades de trabalho para pessoas negras, oferecer uma oficina de programação 100% gratuita para que os participantes aprendam a criar sua primeira aplicação web escrita na linguagem Python.
+# Quero contribuir, como rodar o projeto?
 
-# Quero contribuir, como posso fazer?
+A estrutura consiste em rodar os comandos básicos de um projeto, minificando, compilando e compactando arquivos, direcionando eles para a pasta destino informada no arquivo gulpfile.js no valor da variável ``target.``
+
+Os arquivos devem ser organizados na pasta SRC ou na pasta padrão de conteúdo dependendo da forma como o projeto vai ser desenvolvido.
+([http://localhost:3000](http://localhost:3000))!
+
+## Softwares necessários:
+
+```
+1 - Node.js
+2 - NPM (incluso na versão Windows do Node.js)
+```
+
+## Instruções de como utilizar o projeto
+
+1 - Para baixar as dependências de frontend.:
+
+```
+$ npm install
+```
+
+2 - Para rodar o projeto em [http://localhost:3000](http://localhost:3000):
+
+```
+$ npm start
+```
+
+## Outras tarefas do NPM
+
+* **`npm install --save 'nomedependencia' `** - instala a dependência desejada
+* **`npm run gulp css-compile`** - compila os arquivos ``*.SCSS`` da pasta SRC para o ``style.css`` na DIST
+* **`npm run gulp js-compile`** - compila o ``*.JS`` da pasta SRC e redireciona para a dist
+
+## Outras tarefas do GULP
+
+* **`gulp css-minify`** - depois de executar a task de compilação, o arquivo vai ser minificado e direcionado para a DIST, renomeado como ``style.min.css`` (obs.: este arquivo final é o que deve ser chamado na ``index.html``)
+* **`gulp js-minify`** - minifica o ``*.JS`` da pasta SRC e redireciona para a dist
+* **`gulp build`** - executa as tasks de css-rev e js-rev
+* **`gulp image-minify`** - compacta as imagens da pasta src/images e coloca na dist/img
+* **`gulp default`** - executa todas as tasks e levanta o ambiente (localhost)
+
+##
+
 Criamos um [waffle](https://waffle.io/AfroPython/afropython-site) onde armazenaremos todas as tarefas que ainda precisam ser feitas em nosso site.
-
-E em nossa [Wiki](https://github.com/AfroPython/afropython-site/wiki/Instru%C3%A7%C3%B5es-para-rodar-o-projeto) detalhamos passo a passo de como rodar o projeto.
+Em nossa [Wiki](https://github.com/AfroPython/afropython-site/wiki) você encontrará um pouco de nossa história :D.
 
 ##
 
