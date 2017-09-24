@@ -1,4 +1,5 @@
 footer{
+	position: relative;
 	margin-top: 20px; 
 	background-color: $brand-primary;
 	color: $white;
@@ -18,6 +19,21 @@ footer{
 				color: $white;
 				text-decoration: underline;
 			}
-		}			
+		}
+
+		&__social-icons{
+			list-style: none;
+			position: absolute;
+			top: 7px;
+			right: 100px;
+
+			li{
+				a{
+					color: $white;
+					font-size: 35px;
+				}
+			}
+		}
+
 	}
 }
