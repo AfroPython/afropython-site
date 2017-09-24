@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AfroPython Website",
   "scripts": {
-    "start": "node ./node_modules/gulp/bin/gulp.js gulp",
+    "start": "gulp",
     "css-compile": "gulp css-compile",
     "js-compile": "gulp js-compile"
   },
