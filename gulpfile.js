@@ -41,7 +41,7 @@ gulp.task('serve', ['build'], function () {
 
 });
 
-gulp.task('build', ['css-minify', 'js-minify', 'image-minify']);
+gulp.task('build', ['css-minify', 'copy-fonts', 'js-minify', 'image-minify']);
 
 gulp.task('css-compile', function() {
   return gulp.src([resources + 'scss/**/*.scss', '!' + resources + 'scss/**/_*.scss'])
@@ -61,6 +61,12 @@ gulp.task('css-lib-complile', function(){
     .pipe(postcss(cssPlugins))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(target + 'css'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('copy-fonts', function(){
+  return gulp.src([resources + 'fonts/**/*'])
+    .pipe(gulp.dest(target + 'fonts'))
     .pipe(browserSync.stream());
 });
 
