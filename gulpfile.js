@@ -54,7 +54,17 @@ gulp.task('css-compile', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('css-minify', ['css-compile'], function() {
+gulp.task('css-lib-complile', function(){
+  return gulp.src([resources + 'css/**/*.css'])
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
+    .pipe(postcss(cssPlugins))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest(target + 'css'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('css-minify', ['css-lib-complile','css-compile'], function() {
   return gulp.src([target + 'css/*.css', '!' + target + 'css/*.min.css'])
     .pipe(uglifycss())
     .pipe(rename(function (path) {
