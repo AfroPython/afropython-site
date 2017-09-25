@@ -38,5 +38,21 @@
             opacity: 0.6;
         }
     }
+
+    &__modal-content{
+
+        &__ul-list, &__ol-list{
+            list-style: none;
+
+            li{
+                font-weight: 300;
+                margin-bottom: 15px;
+
+                span{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
 }
 
