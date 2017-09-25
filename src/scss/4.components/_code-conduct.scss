@@ -5,7 +5,7 @@
         font-weight: 300;
         margin: 50px 0;
 
-        @media(max-width: 768px){
+        @media(max-width: $screen-sm){
             font-size: 2.5em;
         }
 
@@ -22,7 +22,7 @@
         font-family: "Roboto",sans-serif;
         font-weight: 300;
 
-        @media(max-width: 768px){
+        @media(max-width: $screen-sm){
             font-size: 1.85em;
         }
 
@@ -46,11 +46,11 @@
     &__button {
         max-width: 350px;
 
-        @media(max-width: 768px){
+        @media(max-width: $screen-sm){
             font-size: 1.5em;
         }
 
-        @media(max-width: 450px){
+        @media(max-width: $screen-xs-max){
             font-size: 1em;
         }
     }
@@ -82,11 +82,11 @@
                     margin-right: 8px;
                 }
 
-                @media(max-width: 768px){
+                @media(max-width: $screen-sm){
                     font-size: 1.75em;
                 }                
 
-                @media(max-width: 450px){
+                @media(max-width: $screen-xs-max){
                     font-size: 1.3em;
                 }                
             }
@@ -95,11 +95,11 @@
         &__title{
             font-weight: 300;
 
-            @media(max-width: 768px){
+            @media(max-width: $screen-sm){
                 font-size: 2.0em;
             }                
 
-            @media(max-width: 450px){
+            @media(max-width: $screen-xs-max){
                 font-size: 1.75em;
                 text-align: center;
             }                
@@ -109,11 +109,11 @@
             font-weight: 300;
             font-size: 1.0em;
 
-            @media(max-width: 768px){
+            @media(max-width: $screen-sm){
                 font-size: 1.75em;
             }     
 
-            @media(max-width: 450px){
+            @media(max-width: $screen-xs-max){
                 font-size: 1.3em;
                 text-align: center;
             }           

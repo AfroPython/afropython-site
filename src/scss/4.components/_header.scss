@@ -12,7 +12,7 @@
     }
   }
 
-  @media(max-width: 450px){
+  @media(max-width: $screen-xs-max){
     padding-top: 15px;
     padding-left: 15px;
 

@@ -16,7 +16,7 @@ footer{
 			margin-top: 2px;
 			font-size: 1.125rem;
 
-			@media(max-width: 768px){
+			@media(max-width: $screen-xs){
 				font-size: 1.3rem;	
 			}
 
@@ -32,11 +32,11 @@ footer{
 			top: 7px;
 			right: 100px;
 
-			@media(max-width: 768px){
+			@media(max-width: $screen-xs){
 				right: 20px;
 			}
 
-			@media(max-width: 450px){
+			@media(max-width: $screen-xs-max){
 				position: static;
 			    width: 100%;
 			    padding: 0px;
