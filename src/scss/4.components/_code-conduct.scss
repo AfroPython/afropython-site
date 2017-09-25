@@ -4,6 +4,15 @@
         color: $brand-primary;
         font-weight: 300;
         margin: 50px 0;
+
+        @media(max-width: 768px){
+            font-size: 2.5em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1.75em;
+            margin-bottom: 15px;
+        }                
     }
 
     &__text {
@@ -12,6 +21,15 @@
         margin-top: 10px;
         font-family: "Roboto",sans-serif;
         font-weight: 300;
+
+        @media(max-width: 768px){
+            font-size: 1.85em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1.3em;
+            text-align: center;
+        }                
     }
 
     &__modal__text {
@@ -19,10 +37,22 @@
         font-weight: 300;
         color: $white;
         font-size: 1em;
+
+        @media(max-width: 450px){
+            font-size: 0.85em;
+        }                
     }
 
     &__button {
-        max-width: 250px;
+        max-width: 350px;
+
+        @media(max-width: 768px){
+            font-size: 1.5em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1em;
+        }
     }
 
     &__modal__close img{
@@ -51,7 +81,42 @@
                 span{
                     margin-right: 8px;
                 }
+
+                @media(max-width: 768px){
+                    font-size: 1.75em;
+                }                
+
+                @media(max-width: 450px){
+                    font-size: 1.3em;
+                }                
             }
+        }
+
+        &__title{
+            font-weight: 300;
+
+            @media(max-width: 768px){
+                font-size: 2.0em;
+            }                
+
+            @media(max-width: 450px){
+                font-size: 1.75em;
+                text-align: center;
+            }                
+        }
+
+        &__text{
+            font-weight: 300;
+            font-size: 1.0em;
+
+            @media(max-width: 768px){
+                font-size: 1.75em;
+            }     
+
+            @media(max-width: 450px){
+                font-size: 1.3em;
+                text-align: center;
+            }           
         }
     }
 }
