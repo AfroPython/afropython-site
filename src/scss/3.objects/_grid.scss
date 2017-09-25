@@ -9,6 +9,11 @@
 		display: table-cell;
 		vertical-align: top;
 
+		@media(max-width: $screen-sm){
+			width: 100%;
+			display: initial;
+		}
+
 		&--middle {
 			vertical-align: middle;
 		}
