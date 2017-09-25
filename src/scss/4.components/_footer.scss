@@ -13,7 +13,12 @@ footer{
 		&__text{
 			font-weight: 300;
 			margin-bottom: 0px;
-			font-size: 14px;			
+			margin-top: 2px;
+			font-size: 1.125rem;
+
+			@media(max-width: 768px){
+				font-size: 1.3rem;	
+			}
 
 			&__link{
 				color: $white;
@@ -26,6 +31,19 @@ footer{
 			position: absolute;
 			top: 7px;
 			right: 100px;
+
+			@media(max-width: 768px){
+				right: 20px;
+			}
+
+			@media(max-width: 450px){
+				position: static;
+			    width: 100%;
+			    padding: 0px;
+			    text-align: center;
+			    margin-bottom: 0px;
+			    padding-bottom: 0px;
+			}
 
 			li{
 				a{

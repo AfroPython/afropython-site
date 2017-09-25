@@ -11,4 +11,16 @@
       width: 120px;
     }
   }
+
+  @media(max-width: 450px){
+    padding-top: 15px;
+    padding-left: 15px;
+
+    &__brand{
+      img{
+        width: 80px;
+      }   
+    }
+  }
+  
 }

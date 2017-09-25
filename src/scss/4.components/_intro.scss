@@ -8,16 +8,41 @@
 
     display: table;
 
-    // display: table-cell;
-    // vertical-align: middle;
-
     &__title {
-        font-size: 5vmax;
+        font-size: 70px;
+
+        @media(max-width: 450px){
+            font-size: 35px;
+        }
+
+        &__h3{
+            @media(max-width: 768px){
+                font-size: 2.5em;
+            }
+
+            @media(max-width: 450px){
+                font-size: 2.0em;
+            }
+        }
     }
 
     &__article {
         display: table-cell;
         vertical-align: middle;
         background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    &__text {
+        @media(max-width: 768px){
+            font-size: 2.0em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1.5em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1.2em;
+        }
     }
 }
