@@ -30,5 +30,8 @@
     "streamqueue": "^1.1.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
   }
 }
