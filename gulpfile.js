@@ -18,6 +18,8 @@ var source          = require('vinyl-source-stream');
 var sourcemaps      = require('gulp-sourcemaps');
 var uglify          = require('gulp-uglify');
 var uglifycss       = require('gulp-uglifycss');
+var deploy          = require('gulp-gh-pages');
+
 
 var cssPlugins = [
   autoprefixer({ remove: false, browsers: '> 1%, last 2 versions, ie 9'}),
