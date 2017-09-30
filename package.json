@@ -5,7 +5,8 @@
   "scripts": {
     "start": "gulp",
     "css-compile": "gulp css-compile",
-    "js-compile": "gulp js-compile"
+    "js-compile": "gulp js-compile",
+    "deploy": "gulp deploy"
   },
   "license": "UNLICENSED",
   "dependencies": {
