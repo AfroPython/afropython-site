@@ -5,8 +5,7 @@
   "scripts": {
     "start": "gulp",
     "css-compile": "gulp css-compile",
-    "js-compile": "gulp js-compile",
-    "deploy": "gulp deploy"
+    "js-compile": "gulp js-compile"
   },
   "license": "UNLICENSED",
   "dependencies": {
@@ -31,8 +30,5 @@
     "streamqueue": "^1.1.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
-  },
-  "devDependencies": {
-    "gulp-gh-pages": "^0.5.4"
   }
 }

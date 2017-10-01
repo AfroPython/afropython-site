@@ -104,9 +104,4 @@ gulp.task('image-minify', function () {
     .pipe(gulp.dest(target + 'img'));
 });
 
-gulp.task('deploy', ['build'], function () {
-  return gulp.src("./public/**/*")
-    .pipe(deploy())
-});
-
 gulp.task('default', ['serve']);
