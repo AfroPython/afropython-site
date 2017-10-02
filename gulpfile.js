@@ -18,6 +18,8 @@ var source          = require('vinyl-source-stream');
 var sourcemaps      = require('gulp-sourcemaps');
 var uglify          = require('gulp-uglify');
 var uglifycss       = require('gulp-uglifycss');
+var deploy          = require('gulp-gh-pages');
+
 
 var cssPlugins = [
   autoprefixer({ remove: false, browsers: '> 1%, last 2 versions, ie 9'}),
@@ -102,6 +104,11 @@ gulp.task('image-minify', function () {
       interlaced: true
     }))
     .pipe(gulp.dest(target + 'img'));
+});
+
+gulp.task('deploy', ['build'], function () {
+  return gulp.src("./public/**/*")
+    .pipe(deploy())
 });
 
 gulp.task('default', ['serve']);
