@@ -27,10 +27,29 @@
             }
         }
 
-        @media(max-width: $screen-sm){
-            height: auto;
+        &.felipe{
+            background-image: url('/img/felipe-morais.png');
+        }
+
+        &.jonas{
+            background-image: url('/img/jonas.png');
+        }
+
+        &.thomas{
+            background-image: url('/img/thomas.png');
+        }
+
+        &.zalba{
+            background-image: url('/img/zalba.png');
+        }
+
+        &.amanda{
+            background-image: url('/img/amanda.png');
+        }
+
+        @media(max-width: $screen-sm){            
             display: block;
-            margin: auto;
+            margin: auto auto 40px;
         }
     }
 
