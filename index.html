@@ -36,10 +36,10 @@
                 AfroPython Porto Alegre
               </h1>
 
-              <h3 class="c-intro__title__h2">
+              <!-- <h3 class="c-intro__title__h2">
                 25 de Novembro
               </h3>
-
+              -->
               <p class="c-intro__text">
                 Tem interesse em nos ajudar? <br> Nos envie um email para <a href="mailto:afropython@gmail.com?subject=Email através do site"> afropython@gmail.com! </a>
               </p>
@@ -253,8 +253,8 @@
   <footer>
     <section class="c-footer">
       <p class="u-text-center c-footer__text">
-        2017, Afropython. Entre em
-        <a href="#" target="_blank" class="c-footer__text__link">contato</a> através do e-mail ou nos siga pelas redes sociais
+        2017, Afropython. Entre em contato através do
+        <a href="mailto:afropython@gmail.com?subject=Email através do site" target="_blank" class="c-footer__text__link">afropython@gmail.com</a> ou nos siga pelas redes sociais
       </p>
       <ul class="c-footer__social-icons">
           <li>
@@ -266,5 +266,32 @@
     </section>
   </footer>
   <script src="js/bundle.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1951629735077342',
+        xfbml      : true,
+        version    : 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107186412-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107186412-1');
+  </script>
 </body>
 </html>
