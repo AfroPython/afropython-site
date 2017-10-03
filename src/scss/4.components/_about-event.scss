@@ -1,9 +1,13 @@
 .c-about-event {
 
+    .o-row{
+        margin: 1.5em 0;
+    }
+
     &__title {
         color: $brand-primary;
         font-weight: 300;
-        margin: 50px 0;
+        margin: 10px 0px 0px;        
     }
 
     &__text {
