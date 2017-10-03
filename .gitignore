@@ -37,3 +37,6 @@ package-lock.json
 /public/css
 /public/js
 /public/img
+
+# Deploy
+.publish/
