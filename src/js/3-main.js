@@ -12,4 +12,8 @@ $(function(){
 			$("header").removeClass("min"); 
 		} 
 	});  
+
+	$(".c-team__figure").click(function(){
+		$(this).toggleClass('active');
+	});
 });
