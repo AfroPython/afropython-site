@@ -1,5 +1,17 @@
 .c-team {
 
+    .o-col{
+        @media(max-width: $screen-md-max){
+            width: calc(100% / 3);
+            display: initial;
+            float: left;
+        }
+
+        @media(max-width: $screen-xs-max){
+            width: 100%;
+        }
+    }
+
     &__title {
         color: $brand-primary;
         font-weight: 300;
@@ -10,21 +22,62 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        -webkit-transition: all 500ms linear;
-        transition: all 500ms linear;
+        -webkit-transition: all 300ms linear;
+        transition: all 300ms linear;
+        cursor: pointer;
+
+
+        @media(max-width: $screen-md-max){
+            display: block;
+            margin: auto auto 70px;
+        }
 
         img {
             border-radius: 50%;
-            -webkit-transition: all 500ms linear;
-            transition: all 500ms linear;
+            -webkit-transition: all 300ms linear;
+            transition: all 300ms linear;
+            border: 0px solid transparent;
         }
 
-        &:hover{  
-            opacity: 0.6;
+        &:hover{
+            @media(min-width: $screen-sm){
+                img{                
+                    border: 6px solid $brand-primary;
+                }
+            }
+        }
+
+        &.active{  
+            opacity: 0.8;
             img{
                 -webkit-transform: rotateY(90deg); /* Safari */
                 transform: rotateY(90deg);
             }
+        }
+
+        &.felipe{
+            background-image: url('/img/felipe-morais.png');
+        }
+
+        &.jonas{
+            background-image: url('/img/jonas.png');
+        }
+
+        &.thomas{
+            background-image: url('/img/thomas.png');
+        }
+
+        &.zalba{
+            background-image: url('/img/zalba.png');
+        }
+
+        &.amanda{
+            background-image: url('/img/amanda.png');
+        }
+
+        @media(max-width: $screen-sm){            
+            display: block;
+            margin: auto auto 40px;
         }
     }
 
@@ -33,5 +86,9 @@
         font-weight: 300;
         text-align: center;
         margin-top: 10px;
+
+        @media(max-width: $screen-sm){
+            margin-bottom: 20px;
+        }
     }
 }
