@@ -27,6 +27,36 @@
 			float: left;
 		}
 
+		&-6{
+			width: calc(100% / 2);
+			float: left;
+			padding: 0 1%;
+
+			@media(max-width: $screen-sm){
+				width: 100%;
+			}
+		}
+
+		&-4{
+			width: calc(100% / 3);
+			float: left;
+			padding: 0 1%;
+
+			@media(max-width: $screen-sm){
+				width: 100%;
+			}
+		}
+
+		&-3{
+			width: calc(100% / 4);
+			float: left;
+			padding: 0 1%;
+
+			@media(max-width: $screen-sm){
+				width: 50%;
+			}
+		}
+
 		&--add-padding-right{
 			padding-right: 30px;
 		}
