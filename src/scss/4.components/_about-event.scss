@@ -3,9 +3,11 @@
 
     .o-row{
         display: flex;
+        margin: 1.5em 0;
 
         @media(max-width: $screen-sm){
             display: grid;
+            margin: 0 0;
         }
     }
 
@@ -22,11 +24,6 @@
             margin: 3% auto 0;
             display: block;
         }
-    }
-
-
-    .o-row{
-        margin: 1.5em 0;
     }
 
     &__title {
