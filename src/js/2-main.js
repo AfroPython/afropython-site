@@ -1,9 +1,11 @@
 $(function(){
-	$("#demo01").animatedModal({
-        animatedIn:'zoomIn',
-        animatedOut:'bounceOut',
-        color:'#da691a',
+	$("#demo01").click(function(){
+		$("#animatedModal").addClass('active');
 	});
+
+	$(".close-animatedModal").click(function(){
+		$("#animatedModal").removeClass('active');
+	})
 
 	$(window).scroll(function () { 
 		if ($(this).scrollTop() > 430) { 
