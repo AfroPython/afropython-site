@@ -8,6 +8,7 @@
     display: table;
 
     &__title {
+        color: $white;
         font-size: 70px;
 
         @media(max-width: $screen-xs-max){
@@ -32,6 +33,7 @@
     }
 
     &__text {
+        color: $white;
         @media(max-width: $screen-sm){
             font-size: 2.0em;
         }

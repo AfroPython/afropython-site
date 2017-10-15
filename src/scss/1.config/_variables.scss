@@ -11,7 +11,7 @@ $black:                     #000;
 $white:                     #fff;
 
 // Objects
-$text-color:                $white;
+$text-color:                $gray-dark;
 $link-color:                $brand-primary;
 $link-hover-color:          $brand-secondary;
 
@@ -23,6 +23,7 @@ $border-radius:             10px;
 // Typography
 $font-family-base:          'Roboto', sans-serif;
 
+$font-weight-light:       300;
 $font-weight-default:     400;
 $font-weight-bold:        700;
 
