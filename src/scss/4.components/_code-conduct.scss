@@ -12,7 +12,7 @@
         @media(max-width: 450px){
             font-size: 1.75em;
             margin-bottom: 15px;
-        }                
+        }
     }
 
     &__text {
@@ -29,7 +29,7 @@
         @media(max-width: 450px){
             font-size: 1.3em;
             text-align: center;
-        }                
+        }
     }
 
     &__modal{
@@ -67,7 +67,7 @@
 
         @media(max-width: 450px){
             font-size: 0.85em;
-        }                
+        }
     }
 
     &__button {
@@ -96,12 +96,13 @@
         }
     }
 
-    &__modal-content{        
+    &__modal-content{
 
         &__ul-list, &__ol-list{
             list-style: none;
 
             li{
+                color: $white;
                 font-weight: 300;
                 margin-bottom: 15px;
 
@@ -111,39 +112,41 @@
 
                 @media(max-width: $screen-sm){
                     font-size: 1.75em;
-                }                
+                }
 
                 @media(max-width: $screen-xs-max){
                     font-size: 1.3em;
-                }                
+                }
             }
         }
 
         &__title{
+            color: $white;
             font-weight: 300;
 
             @media(max-width: $screen-sm){
                 font-size: 2.0em;
-            }                
+            }
 
             @media(max-width: $screen-xs-max){
                 font-size: 1.75em;
                 text-align: center;
-            }                
+            }
         }
 
         &__text{
+            color: $white;
             font-weight: 300;
             font-size: 1.0em;
 
             @media(max-width: $screen-sm){
                 font-size: 1.75em;
-            }     
+            }
 
             @media(max-width: $screen-xs-max){
                 font-size: 1.3em;
                 text-align: center;
-            }           
+            }
         }
     }
 }
