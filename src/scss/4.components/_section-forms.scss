@@ -1,0 +1,15 @@
+.c-section-forms {
+    &__title {
+        color: $brand-primary;
+    }
+
+    &__text {
+        font-weight: $font-weight-light;
+        padding: 0 2em;
+    }
+
+    &__featured
+    {
+        color: $brand-secondary;
+    }
+}
