@@ -478,12 +478,12 @@ template {
 ::-moz-selection {
   background: #913a0d;
   text-shadow: none;
-  color: #fff; }
+  color: #5e5e5e; }
 
 ::selection {
   background: #913a0d;
   text-shadow: none;
-  color: #fff; }
+  color: #5e5e5e; }
 
 html,
 button,
@@ -492,7 +492,7 @@ optgroup,
 select,
 textarea {
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #5e5e5e;
   outline-color: #913a0d;
   -webkit-font-smoothing: antialiased; }
 
@@ -526,11 +526,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #f6f3f3;
+  color: #5e5e5e;
   font-weight: 700; }
 
 p {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 figure {
   margin: 0; }
@@ -724,6 +724,7 @@ ol {
   display: table; }
 
 .c-intro__title {
+    color: #fff;
     font-size: 70px; }
 
 @media (max-width: 767px) {
@@ -743,13 +744,16 @@ ol {
     vertical-align: middle;
     background-color: rgba(0, 0, 0, 0.35); }
 
+.c-intro__text {
+    color: #fff; }
+
 @media (max-width: 768px) {
-    .c-intro__text {
-      font-size: 2.0em; } }
+      .c-intro__text {
+        font-size: 2.0em; } }
 
 @media (max-width: 767px) {
-    .c-intro__text {
-      font-size: 1.2em; } }
+      .c-intro__text {
+        font-size: 1.2em; } }
 
 .c-about-event {
   padding-top: 1.5%; }
@@ -895,6 +899,7 @@ ol {
   list-style: none; }
 
 .c-code-conduct__modal-content__ul-list li, .c-code-conduct__modal-content__ol-list li {
+    color: #fff;
     font-weight: 300;
     margin-bottom: 15px; }
 
@@ -910,6 +915,7 @@ ol {
         font-size: 1.3em; } }
 
 .c-code-conduct__modal-content__title {
+  color: #fff;
   font-weight: 300; }
 
 @media (max-width: 768px) {
@@ -922,6 +928,7 @@ ol {
       text-align: center; } }
 
 .c-code-conduct__modal-content__text {
+  color: #fff;
   font-weight: 300;
   font-size: 1.0em; }
 
@@ -1009,6 +1016,16 @@ ol {
 @media (max-width: 768px) {
     .c-team__name {
       margin-bottom: 20px; } }
+
+.c-section-forms__title {
+  color: #913a0d; }
+
+.c-section-forms__text {
+  font-weight: 300;
+  padding: 0 2em; }
+
+.c-section-forms__featured {
+  color: #da691a; }
 
 footer {
   position: relative;
