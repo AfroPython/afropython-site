@@ -938,8 +938,7 @@ ol {
 
 @media (max-width: 767px) {
     .c-code-conduct__modal-content__text {
-      font-size: 1.3em;
-      text-align: center; } }
+      font-size: 1.3em; } }
 
 @media (max-width: 1199px) {
   .c-team .o-col {
