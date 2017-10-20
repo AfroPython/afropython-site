@@ -15,4 +15,4 @@ __Quem são as melhores pessoas para revisar esse PR?__
 **TODO**
 __Caso tenha algo que ainda precisa ser feito crie uma lista aqui__
 
-- [] __exemplo de algo que precisa ser feito__
+- [ ] __exemplo de algo que precisa ser feito__
