@@ -11,6 +11,8 @@ This event is intended to be welcoming where people feel comfortable in the envi
 
 Any participant who violates these rules will be reprimanded or even expelled from the event without any form of restitution, at the discretion of the organization.
 
+AfroPython wants to be a remarkable initiative: for those who do and for those who participate. And we want only positive and happy marks, since the reasons that unite us are not so historically noble: the fact that black people up 54% of the Brazilian population and we do not see this data reflected in Information Technology companies in Brazil.
+
 **What we want**: Encouraging the entry and empowerment of black people in the area of information technology, generating opportunities for inclusion and professional growth.
 
 **How we want**: Through our affectionate partnerships, passionate about sharing knowledge and socially engaged in the fight against racism and racial discrimination.
