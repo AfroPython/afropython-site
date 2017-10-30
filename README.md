@@ -2,6 +2,10 @@
 
 [![Waffle.io - Issues in progress](https://badge.waffle.io/AfroPython/afropython-site.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/AfroPython/afropython-site)
 
+##
+[English Version](https://github.com/AfroPython/afropython-site/blob/master/README_EN.md)
+##
+
 ## O que é o AfroPython?
 O AfroPython é uma oficina de programação que tem o objetivo de incentivar a população negra nas áreas de tecnologia, porém não é um evento exclusivo para este grupo.
 
