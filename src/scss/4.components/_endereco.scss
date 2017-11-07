@@ -1,0 +1,19 @@
+.c-endereco {
+    padding-top: 35px;
+
+    &__title {
+        color: $brand-primary;
+        font-weight: 300;
+
+        @media(max-width: $screen-sm){
+            font-size: 2.5em;
+        }
+
+        @media(max-width: 450px){
+            font-size: 1.75em;
+            margin-bottom: 15px;
+        }
+
+
+    }
+}
