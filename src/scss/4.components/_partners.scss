@@ -4,6 +4,10 @@
     width: 100%;
 
     .o-col{
+        width: calc(100% / 5);
+        display: block;
+        float: left;
+
         @media(max-width: $screen-md-max){
             width: calc(100% / 3);
             display: initial;
