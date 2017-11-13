@@ -1016,6 +1016,22 @@ ol {
     .c-team__name {
       margin-bottom: 20px; } }
 
+.c-endereco {
+  padding-top: 35px; }
+
+.c-endereco__title {
+    color: #913a0d;
+    font-weight: 300; }
+
+@media (max-width: 768px) {
+      .c-endereco__title {
+        font-size: 2.5em; } }
+
+@media (max-width: 450px) {
+      .c-endereco__title {
+        font-size: 1.75em;
+        margin-bottom: 15px; } }
+
 .c-section-forms__title {
   color: #913a0d; }
 
