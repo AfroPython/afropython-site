@@ -2,19 +2,14 @@ var target          = 'public/';
 var resources       = 'src/';
 var gulp            = require('gulp');
 var autoprefixer    = require('autoprefixer');
-var babelify        = require('babelify');
-var browserify      = require('browserify');
 var browserSync     = require('browser-sync').create();
-var buffer          = require('vinyl-buffer');
 var concat          = require('gulp-concat');
 var cssImport       = require('postcss-import');
 var imagemin        = require('gulp-imagemin');
-var path            = require('path');
 var plumber         = require('gulp-plumber');
 var postcss         = require('gulp-postcss');
 var rename          = require('gulp-rename');
 var sass            = require('gulp-sass');
-var source          = require('vinyl-source-stream');
 var sourcemaps      = require('gulp-sourcemaps');
 var uglify          = require('gulp-uglify');
 var uglifycss       = require('gulp-uglifycss');
@@ -43,7 +38,7 @@ gulp.task('serve', ['build'], function () {
 
 });
 
-gulp.task('build', ['css-minify', 'copy-fonts', 'js-minify', 'image-minify']);
+gulp.task('build', ['css-minify', 'copy-fonts', 'copy-manifest', 'js-minify', 'image-minify']);
 
 gulp.task('css-compile', function() {
   return gulp.src([resources + 'scss/**/*.scss', '!' + resources + 'scss/**/_*.scss'])
@@ -69,6 +64,12 @@ gulp.task('css-lib-complile', function(){
 gulp.task('copy-fonts', function(){
   return gulp.src([resources + 'fonts/**/*'])
     .pipe(gulp.dest(target + 'fonts'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('copy-manifest', function () {
+  return gulp.src(['./manifest.json'])
+    .pipe(gulp.dest(target))
     .pipe(browserSync.stream());
 });
 

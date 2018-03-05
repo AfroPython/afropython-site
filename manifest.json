@@ -1,0 +1,29 @@
+{
+  "name": "AfroPython",
+  "short_name": "AfroPython",
+  "icons": [{
+    "src": "images/icons/afropyton-128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/afropyton-144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/afropyton-152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/afropyton-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "images/icons/afropyton-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}
