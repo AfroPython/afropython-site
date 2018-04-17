@@ -1063,6 +1063,9 @@ ol {
         display: block;
         margin: 10px auto; }
 
+.c-partner__box-partner__content__img-plus {
+        width: 297px; }
+
 .c-partner__box-partner__name {
       display: block;
       text-align: center;

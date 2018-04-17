@@ -72,11 +72,13 @@
     <section class="c-section-forms o-content-block c-section">
         <h2 class="c-section-forms__title u-text-center"> Inscrições de Palestras! </h2>
         <p class="c-section-forms__text u-text-center">
-            Submissões de palestras até o dia 07/04/2018, clique <a href="https://goo.gl/forms/OB51IraX4PR5hQqJ3">aqui</a> e submeta a sua!
+            Submissões de palestras até o dia 07/04/2018, clique <a
+                href="https://goo.gl/forms/OB51IraX4PR5hQqJ3">aqui</a> e submeta a sua!
         </p>
         <h2 class="c-section-forms__title u-text-center"> Inscrições de Participantes! </h2>
         <p class="c-section-forms__text u-text-center">
-            Já está aberto o formulário para participantes, <a href="https://goo.gl/forms/twmuZsckig2LfT5h2">inscreva-se</a> já!
+            Já está aberto o formulário para participantes, <a
+                href="https://goo.gl/forms/twmuZsckig2LfT5h2">inscreva-se</a> já!
         </p>
     </section>
     <section class="c-about-event">
@@ -159,13 +161,28 @@
                     </p>
                 </div>
             </div>
+        </div>
     </section>
     <section class="c-partner">
         <h2 class="c-section-forms__title u-text-center"> Apoiadores </h2>
-        <p class="c-section-forms__text u-text-center">
-            Solicite nossa proposta de patrocínio no e-mail <a href="mailto:afropython@gmail.com?subject=Email através do site" target="_blank"
-                                                               class="c-footer__text__link">afropython@gmail.com</a>.
-        </p>
+        <div class="o-row">
+            <div class="o-col">
+                <div class="c-partner__box-partner">
+                    <div class="c-partner__box-partner__content__img-plus">
+                        <img src="img/sponsors/targetTrust.png">
+                        <p class="c-partner__box-partner__name">TargetTrust</p>
+                    </div>
+                </div>
+            </div>
+            <div class="o-col">
+                <div class="c-partner__box-partner">
+                    <div class="c-partner__box-partner__content__img-plus">
+                        <img src="img/sponsors/pyladies-poa.png">
+                        <p class="c-partner__box-partner__name">TargetTrust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="c-team o-content-block c-section">
         <h2 class="u-text-center c-team__title">
@@ -218,19 +235,19 @@
     </section>
 
     <!--<section class="c-section c-endereco">-->
-        <!--<div class="u-text-center o-content-block">-->
-            <!--<h2 class="c-endereco__title"> Local do evento </h2>-->
-            <!--<p>-->
-                <!--Faculdade Senac Porto Alegre (Campus I), Rua Coronel Genuíno, 130, Centro Histórico.-->
-            <!--</p>-->
-        <!--</div>-->
-        <!--<iframe-->
-                <!--width="100%"-->
-                <!--height="450"-->
-                <!--frameborder="0" style="border:0"-->
-                <!--src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0566117314247!2d-51.22875544975594!3d-30.03523368179676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197906a9d397f5%3A0x514b4935e97fbf4d!2sFaculdade+Senac+Porto+Alegre+(Campus+I)!5e0!3m2!1spt-BR!2sbr!4v1510016280550"-->
-                <!--allowfullscreen>-->
-        <!--</iframe>-->
+    <!--<div class="u-text-center o-content-block">-->
+    <!--<h2 class="c-endereco__title"> Local do evento </h2>-->
+    <!--<p>-->
+    <!--Faculdade Senac Porto Alegre (Campus I), Rua Coronel Genuíno, 130, Centro Histórico.-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--<iframe-->
+    <!--width="100%"-->
+    <!--height="450"-->
+    <!--frameborder="0" style="border:0"-->
+    <!--src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0566117314247!2d-51.22875544975594!3d-30.03523368179676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197906a9d397f5%3A0x514b4935e97fbf4d!2sFaculdade+Senac+Porto+Alegre+(Campus+I)!5e0!3m2!1spt-BR!2sbr!4v1510016280550"-->
+    <!--allowfullscreen>-->
+    <!--</iframe>-->
     <!--</section>-->
 
 
@@ -372,7 +389,7 @@
     }
     js = d.createElement(s);
     js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
+    js.src = '//connect.facebook.net/en_US/sdk.js';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
@@ -382,7 +399,7 @@
   window.dataLayer = window.dataLayer || [];
 
   function gtag() {
-    dataLayer.push(arguments)
+    dataLayer.push(arguments);
   };
   gtag('js', new Date());
 
