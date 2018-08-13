@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -37,13 +38,23 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
             outputPath: 'fonts'
           }
+        }]
+      },
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'jQuery'
+        },{
+          loader: 'expose-loader',
+          options: '$'
         }]
       }
     ]
@@ -56,6 +67,10 @@ module.exports = {
     new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ]
 };
