@@ -11,10 +11,10 @@ AfroPython wants to be a remarkable initiative: for those who do and for those w
 
 # I want to contribute, how to run the project?
 
-The structure consists of running basic commands of a project, minifying, compiling and compressing files, by directing them to the destination folder informed in the gulpfile.js file in the variable value ``target.``
+The structure consists of running basic commands of a project, minifying, compiling and compressing files.
 
 The files should be organized in the SRC folder or in the default content folder depending on how the project will be developed.
-([http://localhost:3000](http://localhost:3000))!
+([http://localhost:8080](http://localhost:8080))!
 
 ## Required softwares:
 
@@ -31,7 +31,7 @@ The files should be organized in the SRC folder or in the default content folder
 $ npm install
 ```
 
-2 - To run the project in [http://localhost:3000](http://localhost:3000):
+2 - To run the project in [http://localhost:8080](http://localhost:8080):
 
 ```
 $ npm start
@@ -40,16 +40,6 @@ $ npm start
 ## Other NPM tasks
 
 * **`npm install --save 'dependencyname' `** - installs the desired dependency
-* **`npm run gulp css-compile`** - compile the ``*.SCSS`` files from the SRC folder to the ``style.css`` in DIST
-* **`npm run gulp js-compile`** - compile the ``*.JS`` from the SRC folder and redirects to the dist
-
-## Other GULP tasks
-
-* **`gulp css-minify`** - after running the compilation task, the file will be minified and directed to the DIST, renamed as ``style.min.css`` (note: this final file is what should be called in ``index.html``)
-* **`gulp js-minify`** - minify the ``*.JS`` from the SRC folder and redirects to the dist
-* **`gulp build`** - run the tasks of css-rev and js-rev
-* **`gulp image-minify`** - compress the images from the src/images folder and put it in the dist/img
-* **`gulp default`** - run all tasks and raise the environment (localhost)
 
 ##
 

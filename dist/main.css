@@ -556,7 +556,7 @@ footer {
 @font-face {
   font-family: 'icomoon';
   src: url(fonts/icomoon.eot);
-  src: url(fonts/icomoon.eot#iefix) format("embedded-opentype"), url(fonts/icomoon.ttf) format("truetype"), url(fonts/icomoon.woff) format("woff"), url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmb250cy9pY29tb29uLnN2ZyI7#icomoon) format("svg");
+  src: url(fonts/icomoon.eot#iefix) format("embedded-opentype"), url(fonts/icomoon.ttf) format("truetype"), url(fonts/icomoon.woff) format("woff"), url(./images/icomoon.svg#icomoon) format("svg");
   font-weight: normal;
   font-style: normal; }
 
