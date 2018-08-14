@@ -3,36 +3,34 @@
   "version": "1.0.0",
   "description": "AfroPython Website",
   "scripts": {
-    "start": "gulp",
-    "css-compile": "gulp css-compile",
-    "js-compile": "gulp js-compile",
-    "deploy": "gulp deploy"
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
   "license": "UNLICENSED",
   "dependencies": {
     "autoprefixer": "6.7.7",
-    "babelify": "7.3.0",
-    "browser-sync": "2.18.5",
-    "browserify": "13.3.0",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "3.1.1",
-    "gulp-concat": "2.6.1",
-    "gulp-imagemin": "3.1.1",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.3.0",
-    "gulp-rename": "1.2.2",
-    "gulp-sass": "3.0.0",
-    "gulp-sourcemaps": "2.4.1",
-    "gulp-uglify": "2.0.0",
-    "gulp-uglifycss": "1.0.6",
     "jquery": "3.2.1",
-    "normalize.css": "5.0.0",
-    "postcss-import": "9.1.0",
-    "streamqueue": "1.1.1",
-    "vinyl-buffer": "1.0.0",
-    "vinyl-source-stream": "1.1.0"
+    "normalize.css": "5.0.0"
   },
   "devDependencies": {
-    "gulp-gh-pages": "0.5.4"
-  }
+    "css-loader": "^1.0.0",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^1.1.11",
+    "gulp-gh-pages": "0.5.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
