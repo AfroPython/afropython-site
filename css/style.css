@@ -759,7 +759,6 @@ ol {
   padding-top: 1.5%; }
 
 .c-about-event .o-row {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 1.5em 0; }
@@ -775,9 +774,8 @@ ol {
     background-color: #dddddd;
     margin: 0px 1%;
     vertical-align: middle;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     border-radius: 5px; }
 
 @media (max-width: 768px) {
