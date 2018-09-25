@@ -1,3 +1,7 @@
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+
 $(function(){
 	$(".open-modal").click(function(){
 		$("#animatedModal").addClass('active');
