@@ -48,14 +48,14 @@ docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.
 
 ### NPM
 
-* `npm install --save 'nomedependencia' ` - instala a dependência desejada'
+* `npm install --save 'nomedependencia'` - instala a dependência desejada
 * `npm run build ` - prepara o site para produção
 * `npm run deploy ` - realiza o deploy
 
 ### Docker - build da imagem
 
 ```sh
-docker build -t afropython/afropython -f Dockerfile .
+docker build -t afropython/afropython-site -f Dockerfile .
 ```
 
 ---------------------------------------

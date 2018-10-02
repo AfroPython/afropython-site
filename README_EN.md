@@ -5,7 +5,7 @@ AfroPython is a programming workshop that aims to encourage the black population
 
 AfroPython wants to be a remarkable initiative: for those who do and for those who participate. And we want only positive and happy marks, since the reasons that unite us are not so historically noble: the fact that we are 54% of the Brazilian population and our presence represents only 0.4% of Information Technology professionals in Brazil.
 
-##
+---------------------------------------
 
 # I want to contribute, how to run the project?
 
@@ -16,48 +16,60 @@ The files should be organized in the SRC folder or in the default content folder
 
 ## Required softwares:
 
-```
-1 - Node.js
-2 - NPM (included in the Node.js version for Windows)
-```
+- Node.js (https://nodejs.org/en/download/)
+- NPM (https://www.npmjs.com/get-npm) [_bundled in the Node.js version for Windows_]
+- Docker (https://docs.docker.com/install/) [_optional_]
 
 ## Instructions on how to use the project
 
 1 - To download frontend dependencies:
 
-```
-$ npm install
+```sh
+npm install
 ```
 
 2 - To run the project in [http://localhost:8080](http://localhost:8080):
 
+```sh
+npm start
 ```
-$ npm start
+
+3 - To run the project in a container [http://localhost:8080](http://localhost:8080):
+
+```sh
+docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.0
 ```
 
 ## Other tasks
 
-* **`npm install --save 'nomedependencia' `** - install the desired dependency
-* **`npm run build `** - prepare for production
-* **`npm run deploy `** - deploy task
+### NPM
 
-##
+* `npm install --save 'nomedependencia'` - install the desired dependency
+* `npm run build ` - prepare for production
+* `npm run deploy ` - perform deployment task
+
+### Docker - building image
+
+```sh
+docker build -t afropython/afropython-site -f Dockerfile .
+```
+
+---------------------------------------
 
 In our [Wiki](https://github.com/AfroPython/afropython-site/wiki) you will find a little of our history :D.
 
-##
+---------------------------------------
 
 Follow us on our [Facebook](https://www.facebook.com/AfroPython/) page
 
 And our contact email: afropython@gmail.com
 
-##
+---------------------------------------
 
 We at AfroPython strive to provide for all participants a harassment-free and respectfull environment, regardless of gender, age, sexual orientation, disability, physical appearance, race or religion.
 
 Read the full version of our [Code of Conduct](https://github.com/AfroPython/afropython-site/blob/master/Code_of_Conduct.md).
 
-
-##
+---------------------------------------
 
 Hugs from the whole AfroPython team :yellow_heart:
