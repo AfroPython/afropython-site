@@ -84,10 +84,11 @@ module.exports = {
           minChunks: 2
         }
       }
-    }  
+    }
   },
   plugins: [
     new HtmlWebPackPlugin({
+      favicon: "src/favicon.ico",
       template: "src/index.html",
       filename: "./index.html"
     }),
