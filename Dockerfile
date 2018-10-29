@@ -16,7 +16,7 @@ FROM library/nginx:1.13.12-alpine as runtime
 
 COPY nginx.conf /etc/nginx/conf.d/
 RUN rm -r /usr/share/nginx/html/*
-COPY --from=builder /opt/app/dist/* /usr/share/nginx/html/
+COPY --from=builder /opt/app/dist /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
