@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -84,10 +85,14 @@ module.exports = {
           minChunks: 2
         }
       }
-    }  
+    }
   },
   plugins: [
+    new CnameWebpackPlugin({
+      domain: 'afropython.org',
+    }),
     new HtmlWebPackPlugin({
+      favicon: "src/favicon.ico",
       template: "src/index.html",
       filename: "./index.html"
     }),

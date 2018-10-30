@@ -45,11 +45,19 @@ footer{
 			    padding-bottom: 0px;
 			}
 
+		
       li{
 				a{
 					color: $white;
 					font-size: 35px;
 				}
+			}
+		}
+
+		.c-footer__social-icons {
+			li {
+				display: inline;
+				padding: 0.2rem;
 			}
 		}
 

@@ -1,7 +1,7 @@
 var gulp            = require('gulp');
-var deploy          = require('gulp-gh-pages');
+var ghpages         = require('gh-pages');
+var path            = require('path');
 
-gulp.task('deploy', ['build'], function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+gulp.task('deploy', function (cb) {
+  ghpages.publish(path.join(process.cwd(), 'dist'), {message: 'Publicado em: ' + new Date()}, cb);
 });

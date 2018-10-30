@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?mbclr4');
-  src:  url('../fonts/icomoon.eot?mbclr4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?mbclr4') format('truetype'),
-    url('../fonts/icomoon.woff?mbclr4') format('woff'),
-    url('../fonts/icomoon.svg?mbclr4#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?ul0g22');
+  src:  url('../fonts/icomoon.eot?ul0g22#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ul0g22') format('truetype'),
+    url('../fonts/icomoon.woff?ul0g22') format('woff'),
+    url('../fonts/icomoon.svg?ul0g22#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,71 +24,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-linkedin3:before {
-  content: "\e909";
+.icon-picture:before {
+  content: "\e00f";
 }
-.icon-tumblr:before {
-  content: "\e90a";
+.icon-pictures:before {
+  content: "\e010";
+}
+.icon-heart1:before {
+  content: "\e04a";
+}
+.icon-facebook1:before {
+  content: "\e05d";
+}
+.icon-twitter1:before {
+  content: "\e05e";
 }
 .icon-googleplus:before {
-  content: "\e90b";
+  content: "\e05f";
 }
-.icon-twitter2:before {
-  content: "\e90c";
-}
-.icon-facebook3:before {
-  content: "\e90d";
-}
-.icon-social-tumbler-circular:before {
-  content: "\e906";
-}
-.icon-social-facebook-circular:before {
-  content: "\e907";
-}
-.icon-social-linkedin-circular:before {
-  content: "\e908";
+.icon-linkedin1:before {
+  content: "\e062";
 }
 .icon-phone:before {
-  content: "\e903";
+  content: "\e942";
 }
-.icon-thumbsup:before {
-  content: "\e904";
-}
-.icon-star:before {
-  content: "\e900";
-}
-.icon-heart2:before {
-  content: "\e901";
-}
-.icon-mouse:before {
-  content: "\e902";
-}
-.icon-phone:before {
-  content: "\e903";
-}
-.icon-thumbsup:before {
-  content: "\e904";
-}
-.icon-thumbsdown:before {
-  content: "\e905";
+.icon-phone-hang-up:before {
+  content: "\e943";
 }
 .icon-pushpin:before {
   content: "\e946";
 }
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
 .icon-heart:before {
   content: "\e9da";
 }
-.icon-point-up:before {
-  content: "\ea03";
-}
-.icon-point-right:before {
-  content: "\ea04";
-}
-.icon-point-down:before {
-  content: "\ea05";
-}
-.icon-point-left:before {
-  content: "\ea06";
+.icon-heart-broken:before {
+  content: "\e9db";
 }
 .icon-checkmark:before {
   content: "\ea10";
@@ -96,8 +72,17 @@
 .icon-checkmark2:before {
   content: "\ea11";
 }
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
 .icon-google-plus:before {
   content: "\ea8b";
+}
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+.icon-google-plus3:before {
+  content: "\ea8d";
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -114,11 +99,20 @@
 .icon-twitter:before {
   content: "\ea96";
 }
+.icon-youtube:before {
+  content: "\ea9d";
+}
 .icon-youtube2:before {
   content: "\ea9e";
 }
 .icon-github:before {
   content: "\eab0";
+}
+.icon-tumblr:before {
+  content: "\eab9";
+}
+.icon-tumblr2:before {
+  content: "\eaba";
 }
 .icon-linkedin:before {
   content: "\eac9";
