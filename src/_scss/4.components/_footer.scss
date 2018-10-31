@@ -1,65 +1,63 @@
-footer{
-	position: relative;
-	margin-top: 20px; 
-	background-color: $brand-primary;
-	color: $white;
+footer {
+  position: relative;
+  margin-top: 20px;
+  background-color: $brand-primary;
+  color: $white;
 
-	.c-footer{
-		width: 80%;
-		height: 100%;
-		padding: 25px 0px;
-		margin: auto;	
-		
-		&__text{
-			font-weight: 300;
-			margin-bottom: 0px;
-			margin-top: 2px;
-			font-size: 1.125rem;
+  .c-footer {
+    width: 80%;
+    height: 100%;
+    padding: 25px 0;
+    margin: auto;
 
-			@media(max-width: $screen-sm){
-				font-size: 1.3rem;	
-			}
+    &__text {
+      font-weight: 300;
+      margin-bottom: 0;
+      margin-top: 2px;
+      font-size: 1.125rem;
 
-			&__link{
-				color: $white;
-				text-decoration: underline;
-			}
-		}
+      @media (max-width: $screen-sm) {
+        font-size: 1.3rem;
+      }
 
-		&__social-icons{
-			list-style: none;
-			position: absolute;
-			top: 7px;
-			right: 100px;
+      &__link {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
 
-			@media(max-width: $screen-sm){
-				right: 20px;
-			}
+    &__social-icons {
+      list-style: none;
+      position: absolute;
+      top: 7px;
+      right: 100px;
 
-			@media(max-width: $screen-xs-max){
-				position: static;
-			    width: 100%;
-			    padding: 0px;
-			    text-align: center;
-			    margin-bottom: 0px;
-			    padding-bottom: 0px;
-			}
+      @media (max-width: $screen-sm) {
+        right: 20px;
+      }
 
-		
-      li{
-				a{
-					color: $white;
-					font-size: 35px;
-				}
-			}
-		}
+      @media (max-width: $screen-xs-max) {
+        position: static;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
 
-		.c-footer__social-icons {
-			li {
-				display: inline;
-				padding: 0.2rem;
-			}
-		}
+      li {
+        a {
+          color: $white;
+          font-size: 35px;
+        }
+      }
+    }
 
-	}
+    .c-footer__social-icons {
+      li {
+        display: inline;
+        padding: 0.2rem;
+      }
+    }
+  }
 }

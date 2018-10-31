@@ -9,12 +9,10 @@
   -ms-transition: heith 600ms linear, background-color 800ms linear;
   -o-transition: heith 600ms linear, background-color 800ms linear;
   transition: heith 600ms linear, background-color 800ms linear;
-  
-  &__brand {
 
+  &__brand {
     img {
       width: 120px;
-
       -webkit-transition: all 600ms linear;
       -moz-transition: all 600ms linear;
       -ms-transition: all 600ms linear;
@@ -23,19 +21,19 @@
     }
   }
 
-  @media(max-width: $screen-xs-max){
+  @media (max-width: $screen-xs-max) {
     padding-top: 15px;
     padding-left: 15px;
 
-    &__brand{
-      img{
+    &__brand {
+      img {
         width: 80px;
-      }   
+      }
     }
   }
 
-  &.min{
-    background-color: rgba(255,255,255,0.6);
+  &.min {
+    background-color: rgba(255, 255, 255, 0.6);
     height: 55px;
     overflow: hidden;
     padding-top: 8px;
@@ -46,5 +44,4 @@
       }
     }
   }
-  
 }

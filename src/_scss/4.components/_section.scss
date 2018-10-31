@@ -1,17 +1,13 @@
-.c-section{
-	padding: 30px 0;
+.c-section {
+  padding: 30px 0;
 
-    &__box{
-
-        &--text{
-            background-color: $white;
-            padding: 50px 60px;
-            position: relative;
-            right: 100px;
-            top: 35px;
-        }
-
+  &__box {
+    &--text {
+      background-color: $white;
+      padding: 50px 60px;
+      position: relative;
+      right: 100px;
+      top: 35px;
     }
-
-
+  }
 }
