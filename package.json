@@ -6,8 +6,7 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "deploy": "npm run build && gulp deploy",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "eslint '**/*.js' --fix"
+    "lint": "eslint '**/*.js' && stylelint '**/*.scss'"
   },
   "license": "UNLICENSED",
   "dependencies": {
@@ -36,6 +35,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^9.7.1",
+    "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
     "webpack": "^4.16.5",
