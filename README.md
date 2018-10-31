@@ -27,6 +27,14 @@ Os arquivos devem ser organizados na pasta SRC ou na pasta padrão de conteúdo 
 
 ## Instruções de como utilizar o projeto
 
+1 - Configurar caminho dos Git Hooks:
+
+Importante para que antes do push seu código passe por uma validação em nossos linters.
+
+```sh
+git config core.hooksPath .githooks
+```
+
 1 - Para baixar as dependências de frontend.:
 
 ```sh
