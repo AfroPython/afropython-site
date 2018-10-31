@@ -1,7 +1,7 @@
 const webpack = require('webpack');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
@@ -10,35 +10,35 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        use: [{ loader: "html-loader", options: { minimize: true } }]
+        use: [{ loader: 'html-loader', options: { minimize: true } }],
       },
       {
         test: /\.(png|svg|jpe?g)/i,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
-              name: "./images/[name].[ext]",
-              limit: 10000
-            }
+              name: './images/[name].[ext]',
+              limit: 10000,
+            },
           },
           {
-            loader: "img-loader"
-          }
-        ]
+            loader: 'img-loader',
+          },
+        ],
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
-        ]
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
@@ -46,21 +46,21 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts'
-          }
-        }]
+            outputPath: 'fonts',
+          },
+        }],
       },
       {
         test: require.resolve('jquery'),
         use: [{
           loader: 'expose-loader',
-          options: 'jQuery'
-        },{
+          options: 'jQuery',
+        }, {
           loader: 'expose-loader',
-          options: '$'
-        }]
-      }
-    ]
+          options: '$',
+        }],
+      },
+    ],
   },
   optimization: {
     minimizer: [
@@ -68,11 +68,11 @@ module.exports = {
         sourceMap: true,
         uglifyOptions: {
           compress: {
-            inline: false
-          }
-        }
+            inline: false,
+          },
+        },
       }),
-      new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({}),
     ],
     runtimeChunk: false,
     splitChunks: {
@@ -82,27 +82,27 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor_app',
           chunks: 'all',
-          minChunks: 2
-        }
-      }
-    }
+          minChunks: 2,
+        },
+      },
+    },
   },
   plugins: [
     new CnameWebpackPlugin({
       domain: 'afropython.org',
     }),
     new HtmlWebPackPlugin({
-      favicon: "src/favicon.ico",
-      template: "src/index.html",
-      filename: "./index.html"
+      favicon: 'src/favicon.ico',
+      template: 'src/index.html',
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
-  ]
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
+  ],
 };
