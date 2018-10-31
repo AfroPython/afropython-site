@@ -21,6 +21,9 @@
   "devDependencies": {
     "cname-webpack-plugin": "^1.0.3",
     "css-loader": "^1.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "expose-loader": "^0.7.5",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
