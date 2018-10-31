@@ -2,6 +2,10 @@
   "name": "AfroPython",
   "version": "1.0.0",
   "description": "AfroPython Website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AfroPython/afropython-site"
+  },
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
