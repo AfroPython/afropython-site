@@ -35,19 +35,19 @@ Importante para que antes do push seu código passe por uma validação em nosso
 git config core.hooksPath .githooks
 ```
 
-1 - Para baixar as dependências de frontend.:
+2 - Para baixar as dependências de frontend.:
 
 ```sh
 npm install
 ```
 
-2 - Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
+3 - Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
 
 ```sh
 npm start
 ```
 
-3 - Para rodar o projecto em um container [http://localhost:8080]
+4 - Para rodar o projecto em um container [http://localhost:8080]
 ```sh
 docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.0
 ```
