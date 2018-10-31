@@ -20,7 +20,7 @@ module.exports = {
             options: {
               name: './images/[name].[ext]',
               limit: 100000,
-            }
+            },
           },
           {
             loader: 'img-loader',
