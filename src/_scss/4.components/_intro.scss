@@ -1,46 +1,45 @@
 .c-intro {
+  height: 85vh;
+  background-image: url('../images/bg-image.png');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: table;
 
-    height: 85vh;
-    background-image: url('../images/bg-image.png');
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    display: table;
+  &__title {
+    color: $white;
+    font-size: 70px;
 
-    &__title {
-        color: $white;
-        font-size: 70px;
-
-        @media(max-width: $screen-xs-max){
-            font-size: 35px;
-        }
-
-        &__h3{
-            @media(max-width: $screen-sm){
-                font-size: 2.5em;
-            }
-
-            @media(max-width: $screen-xs-max){
-                font-size: 2.0em;
-            }
-        }
+    @media (max-width: $screen-xs-max) {
+      font-size: 35px;
     }
 
-    &__article {
-        display: table-cell;
-        vertical-align: middle;
-        background-color: rgba(0, 0, 0, 0.35);
+    &__h3 {
+      @media (max-width: $screen-sm) {
+        font-size: 2.5em;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &__article {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  &__text {
+    color: $white;
+
+    @media (max-width: $screen-sm) {
+      font-size: 2em;
     }
 
-    &__text {
-        color: $white;
-        @media(max-width: $screen-sm){
-            font-size: 2.0em;
-        }
-
-        @media(max-width: $screen-xs-max){
-            font-size: 1.2em;
-        }
-
+    @media (max-width: $screen-xs-max) {
+      font-size: 1.2em;
     }
+  }
 }

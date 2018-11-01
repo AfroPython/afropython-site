@@ -1,75 +1,76 @@
 @media (min-width: 48em) {
-	.o-row {
-		width: 100%;
-		display: table;
-		table-layout: fixed;
-	}
+  .o-row {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
 
-	.o-col {
-		display: table-cell;
-		vertical-align: top;
+  .o-col {
+    display: table-cell;
+    vertical-align: top;
 
-		@media(max-width: $screen-sm){
-			width: 100%;
-			display: initial;
-		}
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      display: initial;
+    }
 
-		&--middle {
-			vertical-align: middle;
-		}
+    &--middle {
+      vertical-align: middle;
+    }
 
-		&--bottom {
-			vertical-align: bottom;
-		}
+    &--bottom {
+      vertical-align: bottom;
+    }
 
-		&--45{
-			width: 45%;
-			float: left;
-		}
+    &--45 {
+      width: 45%;
+      float: left;
+    }
 
-		&-6{
-			width: calc(100% / 2);
-			float: left;
-			padding: 0 1%;
+    &-6 {
+      width: calc(100% / 2);
+      float: left;
+      padding: 0 1%;
 
-			@media(max-width: $screen-sm){
-				width: 100%;
-			}
-		}
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+    }
 
-		&-4{
-			width: calc(100% / 3);
-			float: left;
-			padding: 0 1%;
+    &-4 {
+      width: calc(100% / 3);
+      float: left;
+      padding: 0 1%;
 
-			@media(max-width: $screen-sm){
-				width: 100%;
-			}
-		}
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+    }
 
-		&-3{
-			width: calc(100% / 4);
-			float: left;
-			padding: 0 1%;
+    &-3 {
+      width: calc(100% / 4);
+      float: left;
+      padding: 0 1%;
 
-			@media(max-width: $screen-sm){
-				width: 50%;
-			}
-		}
+      @media (max-width: $screen-sm) {
+        width: 50%;
+      }
+    }
 
-		&--add-padding-right{
-			padding-right: 30px;
-		}
+    &--add-padding-right {
+      padding-right: 30px;
+    }
 
-		&--small{
-			width: 4%;
-		}
+    &--small {
+      width: 4%;
+    }
 
-		&--display-table{
-			display: table;
-		}
-	}
-	.o-row-inline-block{
-		display: inline-block;
-	}
+    &--display-table {
+      display: table;
+    }
+  }
+
+  .o-row-inline-block {
+    display: inline-block;
+  }
 }

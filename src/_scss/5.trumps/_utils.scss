@@ -1,42 +1,42 @@
 .u-sr {
-/*
-* Hide only visually, but have it available for screenreaders: h5bp.com/v
-*/
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    border: 0;
+  /*
+   * Hide only visually, but have it available for screenreaders: h5bp.com/v
+   */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
 .u-clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .u-text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .u-text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .u-margin-clear {
-    margin: 0;
+  margin: 0;
 }
 
 .u-uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .close-animatedModal {
-    width:100%;
-    text-align: center;
-    cursor:pointer;
-    color:#fff;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
 }

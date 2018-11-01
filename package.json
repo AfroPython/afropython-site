@@ -9,7 +9,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "deploy": "npm run build && gulp deploy"
+    "deploy": "npm run build && gulp deploy",
+    "lint": "eslint '**/*.js' && stylelint '**/*.scss'"
   },
   "license": "UNLICENSED",
   "dependencies": {},
@@ -17,6 +18,9 @@
     "autoprefixer": "^9.3.1",
     "cname-webpack-plugin": "^1.0.3",
     "css-loader": "^1.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "expose-loader": "^0.7.5",
     "file-loader": "^2.0.0",
     "gh-pages": "^2.0.1",
@@ -32,6 +36,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^9.7.1",
+    "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.16.5",

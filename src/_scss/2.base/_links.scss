@@ -1,7 +1,7 @@
 a {
   color: $link-color;
   text-decoration: none;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 
   &:hover,
   &:focus {
@@ -13,6 +13,7 @@ a {
   }
 
   &:visited {
+    /* stylelint-disable-line */
     // Filling this one is good UX.
   }
 }
