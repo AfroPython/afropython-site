@@ -5,7 +5,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "deploy": "npm run build && gulp deploy"
+    "deploy": "npm run build && gulp deploy",
+    "test": "echo \"Add tests\"",
+    "lint": "echo \"Add linter\""
   },
   "license": "UNLICENSED",
   "dependencies": {
