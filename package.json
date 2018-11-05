@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
+    "start:docker": "webpack-dev-server --mode development --host 0.0.0.0 --port $PORT",
     "build": "webpack --mode production",
     "deploy": "npm run build && gulp deploy",
     "lint": "eslint '**/*.js' && stylelint '**/*.scss'"

@@ -1,22 +1,33 @@
-FROM library/node:8-alpine as dependencies
+FROM library/node:10.13-alpine
 
-COPY package.json package-lock.json ./
-RUN npm config set progress=false && npm config set depth 0 \
- && npm install \
- && mkdir /opt/app \
- && cp -R ./node_modules /opt/app
+ARG UID=1000
+ARG NODE_ENV=development
+ARG PORT=8080
 
-FROM dependencies as builder
+ENV APP=/home/node/application
+ENV NODE_ENV=${NODE_ENV}
+ENV PORT=${PORT}
 
-WORKDIR /opt/app
-COPY . .
-RUN npm run build
+RUN apk --update upgrade \
+  && apk add --no-cache \
+    shadow
 
-FROM library/nginx:1.13.12-alpine as runtime
+# Update timezone to America/Sao_Paulo
+RUN apk add --no-cache tzdata \
+  && cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
+  && echo "America/Sao_Paulo" > /etc/timezone \
+  && apk del tzdata
 
-COPY nginx.conf /etc/nginx/conf.d/
-RUN rm -r /usr/share/nginx/html/*
-COPY --from=builder /opt/app/dist/* /usr/share/nginx/html/
+RUN usermod -u ${UID:-1000} node \
+  && mkdir -p ${APP} \
+  && chown -R node:node ${APP}
 
-EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
+USER node
+
+WORKDIR ${APP}
+
+VOLUME ${APP}
+
+EXPOSE ${PORT}
+
+CMD ["tail", "-f", "/dev/null"]
