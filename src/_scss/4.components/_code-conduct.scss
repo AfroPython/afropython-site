@@ -1,152 +1,149 @@
 .c-code-conduct {
+  &__title {
+    color: $brand-primary;
+    font-weight: 300;
+    margin: 50px 0;
+
+    @media (max-width: $screen-sm) {
+      font-size: 2.5em;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 1.75em;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    color: $brand-primary;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1.85em;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 1.3em;
+      text-align: center;
+    }
+  }
+
+  &__modal {
+    background-color: $brand-secondary;
+    width: 10%;
+    height: 10%;
+    overflow: auto;
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all linear 300ms;
+    -moz-transition: all linear 300ms;
+    -ms-transition: all linear 300ms;
+    -o-transition: all linear 300ms;
+    transition: all linear 300ms;
+
+    &.active {
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__modal__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: $white;
+    font-size: 1em;
+
+    @media (max-width: 450px) {
+      font-size: 0.85em;
+    }
+  }
+
+  &__button {
+    max-width: 350px;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 1em;
+    }
+  }
+
+  &__modal__close img {
+    margin-top: 10px;
+    transition: all 300ms linear;
+    opacity: 1;
+
+    &:hover {
+      -moz-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      opacity: 0.6;
+    }
+  }
+
+  &__modal-content {
+    &__ul-list,
+    &__ol-list {
+      list-style: none;
+
+      li {
+        color: $white;
+        font-weight: 300;
+        margin-bottom: 15px;
+
+        span {
+          margin-right: 8px;
+        }
+
+        @media (max-width: $screen-sm) {
+          font-size: 1.75em;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 1.3em;
+        }
+      }
+    }
 
     &__title {
-        color: $brand-primary;
-        font-weight: 300;
-        margin: 50px 0;
+      color: $white;
+      font-weight: 300;
 
-        @media(max-width: $screen-sm){
-            font-size: 2.5em;
-        }
+      @media (max-width: $screen-sm) {
+        font-size: 2em;
+      }
 
-        @media(max-width: 450px){
-            font-size: 1.75em;
-            margin-bottom: 15px;
-        }
+      @media (max-width: $screen-xs-max) {
+        font-size: 1.75em;
+        text-align: center;
+      }
     }
 
     &__text {
-        color: $brand-primary;
-        font-weight: 300;
-        margin-top: 10px;
-        font-family: "Roboto",sans-serif;
-        font-weight: 300;
+      color: $white;
+      font-weight: 300;
+      font-size: 1em;
 
-        @media(max-width: $screen-sm){
-            font-size: 1.85em;
-        }
+      @media (max-width: $screen-sm) {
+        font-size: 1.75em;
+      }
 
-        @media(max-width: 450px){
-            font-size: 1.3em;
-            text-align: center;
-        }
+      @media (max-width: $screen-xs-max) {
+        font-size: 1.3em;
+      }
     }
-
-    &__modal{
-        background-color: $brand-secondary;
-        width: 10%;
-        height: 10%;
-        overflow: auto;
-        z-index: 99;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transition: all linear 300ms;
-        -moz-transition: all linear 300ms;
-        -ms-transition: all linear 300ms;
-        -o-transition: all linear 300ms;
-        transition: all linear 300ms;
-
-        &.active{
-            width: 100%;
-            height: 100%;
-            top : 0%;
-            left: 0%;
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-
-    &__modal__text {
-        font-family: "Roboto",sans-serif;
-        font-weight: 300;
-        color: $white;
-        font-size: 1em;
-
-        @media(max-width: 450px){
-            font-size: 0.85em;
-        }
-    }
-
-    &__button {
-        max-width: 350px;
-
-        @media(max-width: $screen-sm){
-            font-size: 1.5em;
-        }
-
-        @media(max-width: $screen-xs-max){
-            font-size: 1em;
-        }
-    }
-
-    &__modal__close img{
-        margin-top: 10px;
-        transition: all 300ms linear;
-        opacity: 1;
-
-        &:hover{
-            -moz-transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-            opacity: 0.6;
-        }
-    }
-
-    &__modal-content{
-
-        &__ul-list, &__ol-list{
-            list-style: none;
-
-            li{
-                color: $white;
-                font-weight: 300;
-                margin-bottom: 15px;
-
-                span{
-                    margin-right: 8px;
-                }
-
-                @media(max-width: $screen-sm){
-                    font-size: 1.75em;
-                }
-
-                @media(max-width: $screen-xs-max){
-                    font-size: 1.3em;
-                }
-            }
-        }
-
-        &__title{
-            color: $white;
-            font-weight: 300;
-
-            @media(max-width: $screen-sm){
-                font-size: 2.0em;
-            }
-
-            @media(max-width: $screen-xs-max){
-                font-size: 1.75em;
-                text-align: center;
-            }
-        }
-
-        &__text{
-            color: $white;
-            font-weight: 300;
-            font-size: 1.0em;
-
-            @media(max-width: $screen-sm){
-                font-size: 1.75em;
-            }
-
-            @media(max-width: $screen-xs-max){
-                font-size: 1.3em;
-            }
-        }
-    }
+  }
 }
-

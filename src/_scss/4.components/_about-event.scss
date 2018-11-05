@@ -1,51 +1,51 @@
 .c-about-event {
-    padding-top: 1.5%;
+  padding-top: 1.5%;
 
-    .o-row{
-        display: flex;
-        margin: 1.5em 0;
+  .o-row {
+    display: flex;
+    margin: 1.5em 0;
 
-        @media(max-width: $screen-sm){
-            display: grid;
-            margin: 0 0;
-        }
+    @media (max-width: $screen-sm) {
+      display: grid;
+      margin: 0 0;
     }
+  }
 
-    [class*="o-col"]{
-        padding: 3% 1.5%;        
-        background-color: $gray-medium;
-        margin: 0px 1%;
-        vertical-align: middle;
-        align-items: center;
-        border-radius: 5px;        
+  [class*="o-col"] {
+    padding: 3% 1.5%;
+    background-color: $gray-medium;
+    margin: 0 1%;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 5px;
 
-        @media(max-width: $screen-sm){
-            width: 94%;
-            margin: 3% auto 0;
-            display: block;
-        }
+    @media (max-width: $screen-sm) {
+      width: 94%;
+      margin: 3% auto 0;
+      display: block;
     }
+  }
 
-    &__title {
-        color: $gray-dark;
-        font-weight: 600;
-        margin: 10px 0px 0px;     
-        text-align: center;
+  &__title {
+    color: $gray-dark;
+    font-weight: 600;
+    margin: 10px 0 0;
+    text-align: center;
 
-        @media(max-width: $screen-sm){
-            font-size: 1.3em;
-        }
+    @media (max-width: $screen-sm) {
+      font-size: 1.3em;
     }
+  }
 
-    &__text {
-        color: $gray-dark;
-        font-weight: 300;
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1em;
+  &__text {
+    color: $gray-dark;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
 
-        @media(max-width: $screen-sm){
-            font-size: 1.12em;
-        }
+    @media (max-width: $screen-sm) {
+      font-size: 1.12em;
     }
+  }
 }

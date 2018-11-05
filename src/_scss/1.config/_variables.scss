@@ -2,36 +2,34 @@
 $brand-primary: #913a0d;
 $brand-secondary: #da691a;
 
-
 $gray-light: #f6f3f3;
-$gray-medium: #dddddd;
+$gray-medium: #ddd;
 $gray-dark: #5e5e5e;
 
-$black:                     #000;
-$white:                     #fff;
+$black: #000;
+$white: #fff;
 
 // Objects
-$text-color:                $gray-dark;
-$link-color:                $brand-primary;
-$link-hover-color:          $brand-secondary;
+$text-color: $gray-dark;
+$link-color: $brand-primary;
+$link-hover-color: $brand-secondary;
 
-$selection-bg-color:        $link-color;
+$selection-bg-color: $link-color;
 $selection-text-color:      $text-color;
 
-$border-radius:             10px;
+$border-radius: 10px;
 
 // Typography
-$font-family-base:          'Roboto', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
 
-$font-weight-light:       300;
-$font-weight-default:     400;
-$font-weight-bold:        700;
-
+$font-weight-light: 300;
+$font-weight-default: 400;
+$font-weight-bold: 700;
 
 // Screen Sizes
 $screen-xs-max: 767px;
-$screen-sm:     768px;
+$screen-sm: 768px;
 $screen-sm-max: 940px;
-$screen-md:     941px;
+$screen-md: 941px;
 $screen-md-max: 1199px;
-$screen-lg:     1200px;
+$screen-lg: 1200px;

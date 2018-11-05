@@ -1,0 +1,14 @@
+#!/bin/bash
+
+ESLINT="$(git rev-parse --show-toplevel)/node_modules/.bin/eslint"
+STYLELINT="$(git rev-parse --show-toplevel)/node_modules/.bin/stylelint"
+
+# Check if dependencies are installed
+if [[ ! -x "$ESLINT" ]] || [[ ! -x "$STYLELINT" ]]; then
+  printf "\033[41mPlease install dependencies\033[0m (npm install)\n"
+  exit 1
+fi
+
+npm run lint
+
+exit $?

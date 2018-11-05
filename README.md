@@ -27,13 +27,21 @@ Os arquivos devem ser organizados na pasta SRC ou na pasta padrão de conteúdo 
 
 ## Instruções de como utilizar o projeto
 
-1 - Para baixar as dependências de frontend.:
+1 - Configurar caminho dos Git Hooks:
+
+Importante para que antes do push seu código passe por uma validação em nossos linters.
+
+```sh
+git config core.hooksPath .githooks
+```
+
+2 - Para baixar as dependências de frontend.:
 
 ```sh
 npm install
 ```
 
-2 - Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
+3 - Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
 
 ```sh
 npm start

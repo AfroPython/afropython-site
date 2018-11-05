@@ -1,6 +1,6 @@
 FROM library/node:8-alpine as dependencies
 
-COPY package.json ./
+COPY package.json package-lock.json ./
 RUN npm config set progress=false && npm config set depth 0 \
  && npm install \
  && mkdir /opt/app \
