@@ -1,6 +1,7 @@
-![AfroPython Logo](AfroPython_brand.png "AfroPython")
+![AfroPython Logo](logo.png "AfroPython")
 
-## What is AfroPython?
+# What is AfroPython?
+
 AfroPython is a programming workshop that aims to encourage the black population in technology areas, but it is not an exclusive event for this group.
 
 AfroPython wants to be a remarkable initiative: for those who do and for those who participate. And we want only positive and happy marks, since the reasons that unite us are not so historically noble: the fact that we are 54% of the Brazilian population and our presence represents only 0.4% of Information Technology professionals in Brazil.
@@ -9,36 +10,34 @@ AfroPython wants to be a remarkable initiative: for those who do and for those w
 
 # I want to contribute, how to run the project?
 
-The structure consists of running basic commands of a project, minifying, compiling and compressing files, by directing them to the destination folder informed in the gulpfile.js file in the variable value ``target.``
+The structure consists of running basic commands of a project, minifying, compiling and compressing files.
 
-The files should be organized in the SRC folder or in the default content folder depending on how the project will be developed.
-([http://localhost:8080](http://localhost:8080))!
+The files should be organized in the `src` folder or in the default content folder depending on how the project will be developed.
 
 ## Required softwares:
 
-- Node.js (https://nodejs.org/en/download/)
-- NPM (https://www.npmjs.com/get-npm) [_bundled in the Node.js version for Windows_]
-- Docker (https://docs.docker.com/install/) [_optional_]
+- [Node.js](https://nodejs.org/en/download/) (10.13+ recommended)
+- [Docker](https://store.docker.com/search?type=edition&offering=community) _[OPTIONAL]_ (18.06+ recommended)
 
 ## Instructions on how to use the project
 
-1 - To download frontend dependencies:
+1. Configure Git Hooks path:
+
+#### This command is important because it runs our linter before you push your code. (see [our hook](./.githooks/pre-push))
+
+2. To download frontend dependencies:
 
 ```sh
 npm install
 ```
 
-2 - To run the project in [http://localhost:8080](http://localhost:8080):
+3. To run the project in [http://localhost:8080](http://localhost:8080):
 
 ```sh
 npm start
 ```
 
-3 - To run the project in a container [http://localhost:8080](http://localhost:8080):
-
-```sh
-docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.0
-```
+4. [OPTIONAL] If you want to run the project using Docker, see more information on the instructions file [here](./docs/DOCKER.md).
 
 ## Other tasks
 
@@ -48,17 +47,19 @@ docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.
 * `npm run build ` - prepare for production
 * `npm run deploy ` - perform deployment task
 
-### Docker - building image
+### Docker
 
-```sh
-docker build -t afropython/afropython-site -f Dockerfile .
-```
+#### See the instructions file [here](./docs/DOCKER.md).
 
 ---------------------------------------
+
+# Wiki
 
 In our [Wiki](https://github.com/AfroPython/afropython-site/wiki) you will find a little of our history :D.
 
 ---------------------------------------
+
+# Contact
 
 Follow us on our [Facebook](https://www.facebook.com/AfroPython/) page
 
