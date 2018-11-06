@@ -4,7 +4,7 @@ ARG UID=1000
 ARG NODE_ENV=development
 ARG PORT=8080
 
-ENV APP=/home/node/application
+ENV APP=/home/node/site
 ENV NODE_ENV=${NODE_ENV}
 ENV PORT=${PORT}
 
