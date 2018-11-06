@@ -17,7 +17,6 @@ The files should be organized in the `src` folder or in the default content fold
 ## Required softwares:
 
 - [Node.js](https://nodejs.org/en/download/) (10.13+ recommended)
-- [Docker](https://store.docker.com/search?type=edition&offering=community) _[OPTIONAL]_ (18.06+ recommended)
 
 ## Instructions on how to use the project
 
