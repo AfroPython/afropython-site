@@ -59,8 +59,6 @@ npm start
 
 ### Docker
 
-#### If you don't want to install a different version of Node.js on your machine, just love Docker as some of us do or just wanna check how Docker works in a development environment, you can check some instructions about Docker and how to run the project [here](./docs/DOCKER.md).
-
 #### Se você não quiser instalar uma versão diferente do Node.js na sua máquina, simplesmente ama Docker como nós ou quer aprender um pouco mais sobre Docker no ambiente de desenvolvimento, você pode verificar algumas instruções sobre Docker e como rodar o projeto [clicando aqui](./docs/DOCKER.md).
 
 ---------------------------------------
