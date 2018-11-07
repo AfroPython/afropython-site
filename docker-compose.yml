@@ -9,6 +9,6 @@ services:
     image: afropython-site-image
     container_name: afropython-site
     ports:
-      - 8080:8080
+      - "8080:8080"
     volumes:
       - ./:/home/node/site:rw,cached
