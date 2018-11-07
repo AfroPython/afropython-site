@@ -107,7 +107,7 @@ All the information below can be found at [Compose file reference](https://docs.
 
 The Compose file have different formats, and they are specific to each version. Version 3 is the most current and recommended version the time of writing this document.
 
-[More about Compose versions](https://docs.docker.com/compose/compose-file/compose-versioning/)
+[Compose versioning](https://docs.docker.com/compose/compose-file/compose-versioning/)
 
 #### `services:`
 
@@ -163,4 +163,4 @@ List of ports mapping the host port to a container port. In our case, we map the
 
 #### `volumes:`
 
-List of volumes. In a development environment, a volume is generally used to give your container access to your source code. In our case, we mount a volume of our whole project, with `./`, to the folder `/home/node/site` in the container. The `rw,cached` part is used to improve the performance of reading and writing on OSX machines. You can read more about it here. [here](https://docs.docker.com/docker-for-mac/osxfs-caching/).
+List of volumes. In a development environment, a volume is generally used to give your container access to your source code. In our case, we mount a volume of our whole project, with `./`, to the folder `/home/node/site` in the container. The `rw,cached` part is used to improve the performance of reading and writing on OSX machines. You can read more about it [here](https://docs.docker.com/docker-for-mac/osxfs-caching/).
