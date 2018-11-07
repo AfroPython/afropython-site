@@ -1,12 +1,10 @@
 FROM library/node:10.13-alpine
 
 ARG UID=1000
-ARG NODE_ENV=development
-ARG PORT=8080
 
 ENV APP=/home/node/site
-ENV NODE_ENV=${NODE_ENV}
-ENV PORT=${PORT}
+ENV NODE_ENV=development
+ENV PORT=8080
 
 RUN apk --update upgrade \
   && apk add --no-cache \
@@ -24,8 +22,6 @@ RUN usermod -u ${UID:-1000} node \
 USER node
 
 WORKDIR ${APP}
-
-VOLUME ${APP}
 
 EXPOSE ${PORT}
 

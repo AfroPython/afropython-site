@@ -164,3 +164,76 @@ List of ports mapping the host port to a container port. In our case, we map the
 #### `volumes:`
 
 List of volumes. In a development environment, a volume is generally used to give your container access to your source code. In our case, we mount a volume of our whole project, with `./`, to the folder `/home/node/site` in the container. The `rw,cached` part is used to improve the performance of reading and writing on OSX machines. You can read more about it [here](https://docs.docker.com/docker-for-mac/osxfs-caching/).
+
+
+### `Dockerfile`
+
+```sh
+FROM library/node:10.13-alpine
+
+ARG UID=1000
+
+ENV APP=/home/node/site
+ENV NODE_ENV=development
+ENV PORT=8080
+
+RUN apk --update upgrade \
+  && apk add --no-cache \
+    shadow
+
+RUN apk add --no-cache tzdata \
+  && cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime \
+  && echo "America/Sao_Paulo" > /etc/timezone \
+  && apk del tzdata
+
+RUN usermod -u ${UID:-1000} node \
+  && mkdir -p ${APP} \
+  && chown -R node:node ${APP}
+
+USER node
+
+WORKDIR ${APP}
+
+EXPOSE ${PORT}
+
+CMD ["tail", "-f", "/dev/null"]
+```
+
+All the information below can be found at [Dockerfile reference](https://docs.docker.com/engine/reference/builder/).
+
+#### `FROM`
+
+It defines a base image to start our own. We're using a node image from the [official repository](https://hub.docker.com/_/node/). Also, we're using the `alpine` alternative, so we get a smaller final version of our image.
+
+#### `ARG`
+
+It defines variables that users can pass a build time. In your case, we're receiving the `UID` variable, and giving it a default value of `1000`.
+
+
+#### `ENV`
+
+It defines environment variables. Those variables can be used at the build time.
+
+#### `RUN`
+
+It executes instructions on top of the current image. We have 3 `RUN` executions on our image:
+
+- The first one uses `apk` to upgrade the system and install the `shadow` package. This package is needed to execute the `usermod` command below.
+- The second one updates the timezone to `America/Sao_Paulo`.
+- The third one uses the `usermod` command to change the UID of the `node` user. It also creates the `APP` folder if needed and changes its ownership.
+
+#### `USER`
+
+It changes the user to be used on instructions that follow the command. Also, when you connect to the container, you'll be logged in as this user.
+
+#### `WORKDIR`
+
+It sets the working directory for any instructions that follow.
+
+#### `EXPOSE`
+
+It defines a port number to listen on the network at runtime. This is the container port, not the host port.
+
+#### `CMD`
+
+This is the command that will be executed when the container runs. In our case, we're just calling the `tail` command so our container keeps running indefinitely.
