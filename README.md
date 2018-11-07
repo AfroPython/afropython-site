@@ -47,9 +47,13 @@ npm install
 npm start
 ```
 
-4 - Para rodar o projecto em um container [http://localhost:8080]
+3 - Se quiser rodar o projeto utilizando Docker, execute os comandos abaixo e acesse [http://localhost:8080](http://localhost:8080):
+
+###### Atualmente, é preciso executar o build + run a cada alteração no código. Em breve uma alternativa será adicionada ao projeto.
+
 ```sh
-docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.0
+docker build -t afropython/afropython-site -f Dockerfile .
+docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site
 ```
 
 ## Outras tarefas
@@ -59,12 +63,6 @@ docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site:1.0.
 * `npm install --save 'nomedependencia'` - instala a dependência desejada
 * `npm run build ` - prepara o site para produção
 * `npm run deploy ` - realiza o deploy
-
-### Docker - build da imagem
-
-```sh
-docker build -t afropython/afropython-site -f Dockerfile .
-```
 
 ---------------------------------------
 
