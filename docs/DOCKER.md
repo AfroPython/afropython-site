@@ -35,7 +35,7 @@ docker-compose exec site ash
 npm ci
 ```
 
-[npm ci](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable)
+- [Introducing `npm ci` for faster, more reliable builds](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable)
 
 5. Run the project executing the following command, connected in the container:
 
