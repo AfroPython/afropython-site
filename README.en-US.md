@@ -36,7 +36,7 @@ npm install
 npm start
 ```
 
-4. [OPTIONAL] If you want to run the project using Docker, see more information on the instructions file [here](./docs/DOCKER.md).
+4. **[OPTIONAL]** If you want to run the project using Docker, see more information on the instructions file [here](./docs/DOCKER.md).
 
 ## Other tasks
 
@@ -48,7 +48,7 @@ npm start
 
 ### Docker
 
-#### See the instructions file [here](./docs/DOCKER.md).
+#### If you don't want to install a different version of Node.js on your machine, just love Docker as some of us do or just wanna check how Docker works in a development environment, you can check some instructions about Docker and how to run the project [here](./docs/DOCKER.md).
 
 ---------------------------------------
 
