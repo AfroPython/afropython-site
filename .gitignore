@@ -39,4 +39,8 @@ jspm_packages
 #idea file
 .idea/
 
+# OSX
 .DS_Store
+
+# DOTENV
+.env

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
+    "start:docker": "webpack-dev-server --mode development --host 0.0.0.0 --port $PORT",
     "build": "webpack --mode production",
     "deploy": "npm run build && gulp deploy",
     "lint": "eslint '**/*.js' && stylelint '**/*.scss'"
@@ -18,6 +19,8 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
     "cname-webpack-plugin": "^1.0.3",
     "css-loader": "^1.0.0",
     "eslint": "^5.8.0",

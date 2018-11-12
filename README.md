@@ -1,11 +1,13 @@
-![AfroPython Logo](AfroPython_brand.png "AfroPython")
-
----------------------------------------
-[English Version](https://github.com/AfroPython/afropython-site/blob/master/README_EN.md)
+![AfroPython Logo](logo.png "AfroPython")
 
 ---------------------------------------
 
-## O que é o AfroPython?
+[English Version](README.en-US.md)
+
+---------------------------------------
+
+# O que é o AfroPython?
+
 O AfroPython é uma oficina de programação que tem o objetivo de incentivar a população negra nas áreas de tecnologia, porém não é um evento exclusivo para este grupo.
 
 O AfroPython deseja ser uma iniciativa marcante: para quem faz e para quem participa. E queremos somente marcas positivas e felizes, já que as razões que nos unem não são tão historicamente nobres: o fato de que somos 54% da população brasileira e nossa presença representa apenas 0,4% dos profissionais de Tecnologia da Informação no Brasil.
@@ -16,45 +18,36 @@ O AfroPython deseja ser uma iniciativa marcante: para quem faz e para quem parti
 
 A estrutura consiste em rodar os comandos básicos de um projeto, minificando, compilando e compactando arquivos.
 
-Os arquivos devem ser organizados na pasta SRC ou na pasta padrão de conteúdo dependendo da forma como o projeto vai ser desenvolvido.
-([http://localhost:8080](http://localhost:8080))!
+Os arquivos devem ser organizados na pasta `src` ou na pasta padrão de conteúdo dependendo da forma como o projeto vai ser desenvolvido.
 
 ## Softwares necessários:
 
-- Node.js (https://nodejs.org/en/download/)
-- NPM (https://www.npmjs.com/get-npm) [_incluso na versão Windows do Node.js_]
-- Docker (https://docs.docker.com/install/) [_opcional_]
+- [Node.js](https://nodejs.org/en/download/) (10.13+ recomendado)
+- [Docker](https://store.docker.com/search?type=edition&offering=community) _[OPCIONAL]_ (18.06+ recomendado)
 
 ## Instruções de como utilizar o projeto
 
-1 - Configurar caminho dos Git Hooks:
+1. Configurar caminho dos Git Hooks:
 
-Importante para que antes do push seu código passe por uma validação em nossos linters.
+#### Importante para que antes do _push_ seu código passe por uma validação em nossos linters. (veja [nosso hook](./.githooks/pre-push))
 
 ```sh
 git config core.hooksPath .githooks
 ```
 
-2 - Para baixar as dependências de frontend.:
+2. Para baixar as dependências de frontend:
 
 ```sh
 npm install
 ```
 
-3 - Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
+3. Para rodar o projeto em [http://localhost:8080](http://localhost:8080):
 
 ```sh
 npm start
 ```
 
-3 - Se quiser rodar o projeto utilizando Docker, execute os comandos abaixo e acesse [http://localhost:8080](http://localhost:8080):
-
-###### Atualmente, é preciso executar o build + run a cada alteração no código. Em breve uma alternativa será adicionada ao projeto.
-
-```sh
-docker build -t afropython/afropython-site -f Dockerfile .
-docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site
-```
+4. **[OPCIONAL]** Caso queira rodar o projeto utilizando Docker, veja mais informações no arquivo de instruções [clicando aqui](./docs/DOCKER.md).
 
 ## Outras tarefas
 
@@ -64,11 +57,19 @@ docker run --rm -dt -p 8080:80 --name afropython afropython/afropython-site
 * `npm run build ` - prepara o site para produção
 * `npm run deploy ` - realiza o deploy
 
+### Docker
+
+#### Se você não quiser instalar uma versão diferente do Node.js na sua máquina, simplesmente ama Docker como nós ou quer aprender um pouco mais sobre Docker no ambiente de desenvolvimento, você pode verificar algumas instruções sobre Docker e como rodar o projeto [clicando aqui](./docs/DOCKER.md).
+
 ---------------------------------------
+
+# Wiki
 
 Em nossa [Wiki](https://github.com/AfroPython/afropython-site/wiki) você encontrará um pouco de nossa história :D.
 
 ---------------------------------------
+
+# Contato
 
 Nos acompanhe em nossa página no [Facebook](https://www.facebook.com/AfroPython/)
 

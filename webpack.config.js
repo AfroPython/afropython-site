@@ -51,6 +51,15 @@ module.exports = {
         }],
       },
       {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env'],
+          },
+        },
+      },
+      {
         test: require.resolve('jquery'),
         use: [{
           loader: 'expose-loader',
