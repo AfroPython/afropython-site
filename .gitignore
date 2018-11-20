@@ -35,6 +35,7 @@ jspm_packages
 
 # Deploy
 .publish/
+dist/*
 
 #idea file
 .idea/
