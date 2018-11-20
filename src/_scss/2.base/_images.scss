@@ -2,3 +2,8 @@ img {
   max-width: 100%;
   font-style: italic; /* fancy broken image alt text */
 }
+
+/* make sure images used in html are added to dist (see https://stackoverflow.com/a/48727477/1712589) */
+._images-opengraph {
+  background-image: url('../images/afropython-image.png');
+}
