@@ -10,6 +10,7 @@
     color: $dominant-color;
     font-size: 70px;
     margin: 0;
+    font-family: $font-family-featured;
 
     @media (max-width: $screen-xs-max) {
       font-size: 35px;
