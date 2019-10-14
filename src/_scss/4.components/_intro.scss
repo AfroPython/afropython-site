@@ -7,10 +7,11 @@
   display: table;
 
   &__title {
-    color: $dominant-color;
+    color: $dominant-color-secondary;
     font-size: 70px;
     margin: 0;
     font-family: $font-family-featured;
+    text-shadow: 1px 1px 2px $brand-primary;
 
     @media (max-width: $screen-xs-max) {
       font-size: 35px;
