@@ -7,8 +7,9 @@
   display: table;
 
   &__title {
-    color: $white;
+    color: $dominant-color;
     font-size: 70px;
+    margin: 0;
 
     @media (max-width: $screen-xs-max) {
       font-size: 35px;
@@ -32,7 +33,12 @@
   }
 
   &__text {
-    color: $white;
+    color: $dominant-color;
+
+    &__email{
+      color: $white;
+      font-weight: bold;
+    }
 
     @media (max-width: $screen-sm) {
       font-size: 2em;
