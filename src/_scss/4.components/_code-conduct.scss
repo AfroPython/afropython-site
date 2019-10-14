@@ -18,8 +18,11 @@
   &__text {
     color: $brand-primary;
     font-weight: 300;
-    margin-top: 10px;
     font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 150px 40px;
+    line-height: 1.5em;
 
     @media (max-width: $screen-sm) {
       font-size: 1.85em;
@@ -70,9 +73,11 @@
   }
 
   &__button {
-    max-width: 350px;
+    max-width: 200px;
     font-family: $font-family-featured;
     text-transform: lowercase;
+    border-radius: 100px;
+    color: $dominant-color;
 
     @media (max-width: $screen-sm) {
       font-size: 1.5em;
