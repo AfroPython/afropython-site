@@ -26,11 +26,13 @@
 
     @media (max-width: $screen-sm) {
       font-size: 1.85em;
+      margin: 10px 0;
     }
 
     @media (max-width: 450px) {
       font-size: 1.3em;
       text-align: center;
+      margin: 10px 0;
     }
   }
 
