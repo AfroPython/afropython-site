@@ -1,6 +1,9 @@
 // Colors
 $brand-primary: #913a0d;
 $brand-secondary: #da691a;
+$dominant-color: #fdb431;
+$dominant-color-secondary: #f56b09;
+$background-color: #eee0d3;
 
 $gray-light: #f6f3f3;
 $gray-medium: #ddd;
@@ -11,7 +14,7 @@ $white: #fff;
 
 // Objects
 $text-color: $gray-dark;
-$link-color: $brand-primary;
+$link-color: $brand-secondary;
 $link-hover-color: $brand-secondary;
 
 $selection-bg-color: $link-color;
@@ -21,6 +24,8 @@ $border-radius: 10px;
 
 // Typography
 $font-family-base: 'Roboto', sans-serif;
+$font-family-featured: 'Amaranth', sans-serif;
+
 
 $font-weight-light: 300;
 $font-weight-default: 400;
